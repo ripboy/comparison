@@ -1,5 +1,5 @@
 # Release Report
-Changes between releases 2017-10-19 and 2017-11-02
+Changes made between releases 2017-10-19 and 2017-11-02
 ## Database File Changes
 ## **Duplicate Files Changes**
 *File #1*
@@ -1664,5 +1664,170 @@ index 2e123682f4..dc90ae5d82 100644
      <name>Kuali Financial System</name>
      <description>a comprehensive financial management system for higher education.</description>
      <inceptionYear>2005</inceptionYear>
+```
+---
+*File #49*
+
+**pom.xml**
+
+```diff
+diff --git a/CHANGELOG.txt b/CHANGELOG.txt
+index 129464aa2e..0cb0a19b85 100644
+--- a/CHANGELOG.txt
++++ b/CHANGELOG.txt
+@@ -1,3 +1,153 @@
++************************* 2017-11-02 *************************
++commit a21380514242ca065e605b17190359dd33646f4b
++Author: Philip Berg <pcberg@iu.edu>
++Date:   2017-11-01 18:23:30 -0400
++
++    FINP-2371: Removal of inactive org note
++
++:100644 100644 f8f5a2f... a17702c... M	kfs-cam/src/main/java/org/kuali/kfs/module/cam/CamsKeyConstants.java
++:100644 100644 6d26c97... a7c28a4... M	kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/AssetLocationGlobalMaintainableImpl.java
++:100644 100644 4c9c53a... a269bf2... M	kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/AssetMaintainableImpl.java
++:100644 100644 d746a3d... 90b825c... M	kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/AssetRetirementGlobalMaintainableImpl.java
++:100644 100644 e5bba9c... f4139cd... M	kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/AssetTransferDocument.java
++:100644 100644 3eab504... 84b5405... M	kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/service/AssetService.java
++:100644 100644 5235196... e9e336f... M	kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/service/impl/AssetServiceImpl.java
++:100644 100644 10309a4... 8ceb937... M	kfs-cam/src/main/resources/org/kuali/kfs/module/cam/cam-resources.properties
++:100644 100644 5e2efa0... 1c6332c... M	kfs-cam/src/main/resources/org/kuali/kfs/module/cam/spring-cam.xml
++
++commit e37d8deac5937a0334251ddf27134e9a226d35de
++Author: Philip Berg <pcberg@iu.edu>
++Date:   2017-11-01 17:48:05 -0400
++
++    FINP-2372: Additional MD notes conversion defntn
++
++:100644 100644 9dd969e... 05fe0ff... M	kfs-kns/src/main/resources/org/kuali/kfs/krad/config/MaintainableXMLUpgradeRules.xml
++
++commit 416d79dec42781570df4bf819e9f1918c9badc38
++Author: warheadwl <warheadwl@users.noreply.github.com>
++Date:   2017-11-01 07:28:57 -0700
++
++    upgrade taxitems.tag to the newest UI standards (#1394)
++
++:100644 100644 0983a16... 504f5b4... M	kfs-web/src/main/webapp/WEB-INF/tags/module/purap/taxitems.tag
++
++commit 5a45dcf952dc46d8b5d392c9321047eaf36b432b
++Author: Kevin Kronenbitter <kevin@kuali.co>
++Date:   2017-10-31 16:27:52 -0600
++
++    FINP-2369 fix NPE when checking inactive org hierarchy (#1429)
++
++:100644 100644 c725563... f5503a3... M	kfs-core/src/main/java/org/kuali/kfs/coa/service/impl/OrganizationServiceImpl.java
++
++commit e6b322d4cb088af8ed9e52f72750a4b774be9ea2
++Author: Philip Berg <pcberg@iu.edu>
++Date:   2017-10-31 15:36:54 -0400
++
++    FINP-2367: Review feedback, thanks!
++
++:100644 100644 11b39e0... 32616d1... M	kfs-web/src/main/webapp/WEB-INF/tags/module/ec/detailLineDataCell.tag
++:100644 100644 95dbe23... f5ddba2... M	kfs-web/src/main/webapp/css/newPortal.css
++
++commit 8f6f974dd3326ac2a86ca326feab4f98ef71ba06
++Author: Philip Berg <pcberg@iu.edu>
++Date:   2017-10-31 15:15:15 -0400
++
++    FINP-2367: Give EC report cells a maxwidth
++
++:100644 100644 8de6384... 11b39e0... M	kfs-web/src/main/webapp/WEB-INF/tags/module/ec/detailLineDataCell.tag
++:100644 100644 55f4abe... 95dbe23... M	kfs-web/src/main/webapp/css/newPortal.css
++
++commit c55454f2ecad911febb52d99a0e51e7975f37525
++Author: Philip Berg <pcberg@iu.edu>
++Date:   2017-10-30 17:26:28 -0400
++
++    FINP-2363: (Re-) allow range operators
++
++:100644 100644 ad094db... 1e7da00... M	kfs-kns/src/main/java/org/kuali/kfs/krad/dao/impl/LookupDaoOjb.java
++
++commit dfab1a3478bbe91d4eed72c001a797f26972e999
++Author: Philip Berg <pcberg@iu.edu>
++Date:   2017-10-30 10:31:55 -0400
++
++    FINP-2359: Uppercase country name
++
++:100644 100644 7885d16... 7829404... M	kfs-ar/src/main/java/org/kuali/kfs/module/ar/report/service/impl/AccountsReceivableReportServiceImpl.java
++
++commit f6617b090b02a99bfafbef49245a360f0e222f23
++Author: Philip Berg <pcberg@iu.edu>
++Date:   2017-10-27 18:11:01 -0400
++
++    FINP-2357: Wrong jira, reverting
++
++:100644 100644 7829404... 7885d16... M	kfs-ar/src/main/java/org/kuali/kfs/module/ar/report/service/impl/AccountsReceivableReportServiceImpl.java
++
++commit 8c27dfdb5161bc8b9d2eef9de3d37f186ec9816f
++Author: Philip Berg <pcberg@iu.edu>
++Date:   2017-10-27 18:08:42 -0400
++
++    FINP-2357: Don't add duplicate notes
++
++:100644 100644 3d533c1... 5235196... M	kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/service/impl/AssetServiceImpl.java
++
++commit c1b67cd410420c707b0fc6aeb50c99fd088bc741
++Author: Philip Berg <pcberg@iu.edu>
++Date:   2017-10-27 12:14:46 -0400
++
++    FINP-2359: Uppercase country name
++
++:100644 100644 7885d16... 7829404... M	kfs-ar/src/main/java/org/kuali/kfs/module/ar/report/service/impl/AccountsReceivableReportServiceImpl.java
++
++commit 5920cb9d42ffd64ba0df0e5ca7a4f4d35c689dbb
++Author: Philip Berg <pcberg@iu.edu>
++Date:   2017-10-26 17:40:41 -0400
++
++    FINP-2350: Added pattern for MD notes conversion
++
++:100644 100644 2707a80... 8a73b51... M	kfs-kns/src/main/java/org/kuali/kfs/krad/maintenance/MaintenanceDocumentBase.java
++:100644 100644 2f415e1... f7d77de... M	kfs-kns/src/main/java/org/kuali/kfs/krad/service/MaintainableXMLConversionService.java
++:100644 100644 616aafc... b9ce96f... M	kfs-kns/src/main/java/org/kuali/kfs/krad/service/impl/MaintainableXMLConversionServiceImpl.java
++:100644 100644 604c73f... 9dd969e... M	kfs-kns/src/main/resources/org/kuali/kfs/krad/config/MaintainableXMLUpgradeRules.xml
++
++commit b1531ff6f6e6dea6dd600e7241f426da8c565b74
++Author: Philip Berg <pcberg@iu.edu>
++Date:   2017-10-26 13:23:31 -0400
++
++    FINP-2347: Generic solution for IE caching
++
++:100644 100644 243640a... 93eb284... M	kfs-kns/src/main/java/org/kuali/kfs/kns/inquiry/KualiInquirableImpl.java
++
++commit 19b7e8eb3db1ee309d9a22e8ba5310946f9ed5c7
++Author: Philip Berg <pcberg@iu.edu>
++Date:   2017-10-25 16:59:23 -0400
++
++    FINP-2331: Force IE to skip cache if necessary
++
++:100644 100644 9967c10... e2d5e5b... M	kfs-web/src/main/webapp/WEB-INF/tags/module/cams/assetPaymentsAssetInformation.tag
++:100644 100644 20417a9... 0d34b45... M	kfs-web/src/main/webapp/WEB-INF/tags/module/cams/viewPaymentInProcessByAsset.tag
++
++commit 338dd2eb0a417ca227d5b09eed9cc253d1ecb11d
++Author: Philip Berg <pcberg@iu.edu>
++Date:   2017-10-25 12:27:38 -0400
++
++    FINP-2338: Method foodprint cleanup
++
++:100644 100644 857f866... 29216e4... M	kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/service/impl/AssetPaymentServiceImpl.java
++
++commit 0c1d13b774361aa1f255796f471fb383a48be902
++Author: Philip Berg <pcberg@iu.edu>
++Date:   2017-10-25 12:27:09 -0400
++
++    FINP-2338: Avoid NPE on grouped lines
++
++:100644 100644 4bddd11... 857f866... M	kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/service/impl/AssetPaymentServiceImpl.java
++
++commit d6f58e60e3ea58a235a1efeca5158640da711005
++Author: Philip Berg <pcberg@iu.edu>
++Date:   2017-10-24 17:16:06 -0400
++
++    FINP-2319: No valid. when MPAY from cab extract
++
++:100644 100644 43c2633... a8a0114... M	kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/validation/impl/AssetPaymentAllocationByAmountValidation.java
+ ************************* 2017-10-19 *************************
+ commit de3f445b9fc9f99b7bdb4f420572b5cd43ff33ac
+ Author: Kevin Kronenbitter <kevin@kuali.co>
 ```
 ---
