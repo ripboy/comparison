@@ -1,10 +1,12 @@
 # Release Report
-Changes between release 2017-10-19 and 2017-11-02
+Changes between releases 2017-10-19 and 2017-11-02
 ## Database File Changes
 ## **Duplicate File Changes**
 ---
 *File# 1*
+
 **kfs-ar/src/main/java/org/kuali/kfs/module/ar/report/service/impl/AccountsReceivableReportServiceImpl.java**
+
 diff --git a/kfs-ar/src/main/java/org/kuali/kfs/module/ar/report/service/impl/AccountsReceivableReportServiceImpl.java b/kfs-ar/src/main/java/org/kuali/kfs/module/ar/report/service/impl/AccountsReceivableReportServiceImpl.java
 index 7885d16118..78294044b1 100644
 --- a/kfs-ar/src/main/java/org/kuali/kfs/module/ar/report/service/impl/AccountsReceivableReportServiceImpl.java
@@ -31,7 +33,9 @@ index 7885d16118..78294044b1 100644
 
 ---
 *File# 2*
+
 **kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/AssetMaintainableImpl.java**
+
 diff --git a/kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/AssetMaintainableImpl.java b/kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/AssetMaintainableImpl.java
 index 4c9c53a91c..a269bf25ca 100644
 --- a/kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/AssetMaintainableImpl.java
@@ -48,7 +52,9 @@ index 4c9c53a91c..a269bf25ca 100644
 
 ---
 *File# 3*
+
 **kfs-kns/src/main/resources/org/kuali/kfs/krad/config/MaintainableXMLUpgradeRules.xml**
+
 diff --git a/kfs-kns/src/main/resources/org/kuali/kfs/krad/config/MaintainableXMLUpgradeRules.xml b/kfs-kns/src/main/resources/org/kuali/kfs/krad/config/MaintainableXMLUpgradeRules.xml
 index 604c73fa58..05fe0ffa6d 100644
 --- a/kfs-kns/src/main/resources/org/kuali/kfs/krad/config/MaintainableXMLUpgradeRules.xml
@@ -72,7 +78,9 @@ index 604c73fa58..05fe0ffa6d 100644
 
 ---
 *File# 4*
+
 **kfs-cam/src/main/resources/org/kuali/kfs/module/cam/spring-cam.xml**
+
 diff --git a/kfs-cam/src/main/resources/org/kuali/kfs/module/cam/spring-cam.xml b/kfs-cam/src/main/resources/org/kuali/kfs/module/cam/spring-cam.xml
 index 5e2efa0ed0..1c6332ce6e 100644
 --- a/kfs-cam/src/main/resources/org/kuali/kfs/module/cam/spring-cam.xml
