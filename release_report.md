@@ -2,7 +2,6 @@
 Changes between releases 2017-10-19 and 2017-11-02
 ## Database File Changes
 ## **Duplicate Files Changes**
----
 *File #1*
 
 **kfs-ar/src/main/java/org/kuali/kfs/module/ar/report/service/impl/AccountsReceivableReportServiceImpl.java**
@@ -100,10 +99,10 @@ index 5e2efa0ed0..1c6332ce6e 100644
  
      <bean id="assetTransferService" parent="assetTransferService-parentBean"/>
 ```
+---
 ## **Properties Files Changes**
 ## **Workflow File Changes**
 ## **Miscellaneous File Changes**
----
 *File #5*
 
 **CHANGELOG.txt**
@@ -1666,3 +1665,4 @@ index 2e123682f4..dc90ae5d82 100644
      <description>a comprehensive financial management system for higher education.</description>
      <inceptionYear>2005</inceptionYear>
 ```
+---
