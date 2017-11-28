@@ -1,7 +1,7 @@
 # Release Report
 Changes between releases 2017-10-19 and 2017-11-02
 ## Database File Changes
-## **Duplicate File Changes**
+## **Duplicate Files Changes**
 ---
 *File #1*
 
@@ -30,8 +30,6 @@ index 7885d16118..78294044b1 100644
              }
              customerMap.put("billToCityStateZip", billCityStateZip);
          }
-
-
 ```
 ---
 *File #2*
@@ -51,8 +49,6 @@ index 4c9c53a91c..a269bf25ca 100644
              return true;
          } else {
              return false;
-
-
 ```
 ---
 *File #3*
@@ -79,8 +75,6 @@ index 604c73fa58..05fe0ffa6d 100644
      </rule>
  
      <!-- Rules specifying any change in class properties.
-
-
 ```
 ---
 *File #4*
@@ -105,22 +99,16 @@ index 5e2efa0ed0..1c6332ce6e 100644
      </bean>
  
      <bean id="assetTransferService" parent="assetTransferService-parentBean"/>
-
-
 ```
-###################################################################################
-\PROPERTY FILES CHNAGES:
+## **Properties Files Changes**
+## **Workflow File Changes**
+## **Miscellaneous File Changes**
+---
+*File #5*
 
-###################################################################################
-\WORKFLOW FILES CHNAGES:
+**CHANGELOG.txt**
 
-###################################################################################
-\MISCELLANEOUS FILES CHNAGES:
-
--------------------------------------------------------------------------------
-File# 5
-CHANGELOG.txt:
-
+```diff
 diff --git a/CHANGELOG.txt b/CHANGELOG.txt
 index 129464aa2e..0cb0a19b85 100644
 --- a/CHANGELOG.txt
@@ -279,12 +267,13 @@ index 129464aa2e..0cb0a19b85 100644
  ************************* 2017-10-19 *************************
  commit de3f445b9fc9f99b7bdb4f420572b5cd43ff33ac
  Author: Kevin Kronenbitter <kevin@kuali.co>
+```
+---
+*File #6*
 
+**kfs-ar/pom.xml**
 
--------------------------------------------------------------------------------
-File# 6
-kfs-ar/pom.xml:
-
+```diff
 diff --git a/kfs-ar/pom.xml b/kfs-ar/pom.xml
 index a1ff49bacf..b078be6064 100644
 --- a/kfs-ar/pom.xml
@@ -298,12 +287,13 @@ index a1ff49bacf..b078be6064 100644
      </parent>
      <modelVersion>4.0.0</modelVersion>
  
+```
+---
+*File #7*
 
+**kfs-ar/src/main/resources/org/kuali/kfs/module/ar/db/phase5/next-release.xml**
 
--------------------------------------------------------------------------------
-File# 7
-kfs-ar/src/main/resources/org/kuali/kfs/module/ar/db/phase5/next-release.xml:
-
+```diff
 diff --git a/kfs-ar/src/main/resources/org/kuali/kfs/module/ar/db/phase5/next-release.xml b/kfs-ar/src/main/resources/org/kuali/kfs/module/ar/db/phase5/next-release.xml
 index c096e8a20b..4d94e80679 100644
 --- a/kfs-ar/src/main/resources/org/kuali/kfs/module/ar/db/phase5/next-release.xml
@@ -314,12 +304,13 @@ index c096e8a20b..4d94e80679 100644
  -->
 -<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/kfs/module/ar/db/phase5/post-rel-2017-10-19.xml"/>
 +<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/kfs/module/ar/db/phase5/post-rel-2017-11-02.xml"/>
+```
+---
+*File #8*
 
+**kfs-cam/pom.xml**
 
--------------------------------------------------------------------------------
-File# 8
-kfs-cam/pom.xml:
-
+```diff
 diff --git a/kfs-cam/pom.xml b/kfs-cam/pom.xml
 index e809ed3f34..9e1613e6cc 100644
 --- a/kfs-cam/pom.xml
@@ -333,12 +324,13 @@ index e809ed3f34..9e1613e6cc 100644
      </parent>
      <modelVersion>4.0.0</modelVersion>
  
+```
+---
+*File #9*
 
+**kfs-cam/src/main/java/org/kuali/kfs/module/cam/CamsKeyConstants.java**
 
--------------------------------------------------------------------------------
-File# 9
-kfs-cam/src/main/java/org/kuali/kfs/module/cam/CamsKeyConstants.java:
-
+```diff
 diff --git a/kfs-cam/src/main/java/org/kuali/kfs/module/cam/CamsKeyConstants.java b/kfs-cam/src/main/java/org/kuali/kfs/module/cam/CamsKeyConstants.java
 index f8f5a2f050..a17702c39a 100644
 --- a/kfs-cam/src/main/java/org/kuali/kfs/module/cam/CamsKeyConstants.java
@@ -352,12 +344,13 @@ index f8f5a2f050..a17702c39a 100644
      public static class Depreciation {
          public static final String NO_ELIGIBLE_FOR_DEPRECIATION_ASSETS_FOUND = "error.batch.depreciation.assetsNotFound";
          public static final String ERROR_WHEN_CALCULATING_BASE_AMOUNT = "error.batch.depreciation.baseAmountCalculationError";
+```
+---
+*File #10*
 
+**kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/AssetLocationGlobalMaintainableImpl.java**
 
--------------------------------------------------------------------------------
-File# 10
-kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/AssetLocationGlobalMaintainableImpl.java:
-
+```diff
 diff --git a/kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/AssetLocationGlobalMaintainableImpl.java b/kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/AssetLocationGlobalMaintainableImpl.java
 index 6d26c97cb4..a7c28a4346 100644
 --- a/kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/AssetLocationGlobalMaintainableImpl.java
@@ -370,12 +363,13 @@ index 6d26c97cb4..a7c28a4346 100644
              return true;
          }
      }
+```
+---
+*File #11*
 
+**kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/AssetRetirementGlobalMaintainableImpl.java**
 
--------------------------------------------------------------------------------
-File# 11
-kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/AssetRetirementGlobalMaintainableImpl.java:
-
+```diff
 diff --git a/kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/AssetRetirementGlobalMaintainableImpl.java b/kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/AssetRetirementGlobalMaintainableImpl.java
 index d746a3daa6..90b825c4cf 100644
 --- a/kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/AssetRetirementGlobalMaintainableImpl.java
@@ -388,12 +382,13 @@ index d746a3daa6..90b825c4cf 100644
              return true;
          }
      }
+```
+---
+*File #12*
 
+**kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/AssetTransferDocument.java**
 
--------------------------------------------------------------------------------
-File# 12
-kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/AssetTransferDocument.java:
-
+```diff
 diff --git a/kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/AssetTransferDocument.java b/kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/AssetTransferDocument.java
 index e5bba9c3dc..f4139cd77b 100644
 --- a/kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/AssetTransferDocument.java
@@ -407,12 +402,13 @@ index e5bba9c3dc..f4139cd77b 100644
              return true;
          } else {
              return false;
+```
+---
+*File #13*
 
+**kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/service/AssetService.java**
 
--------------------------------------------------------------------------------
-File# 13
-kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/service/AssetService.java:
-
+```diff
 diff --git a/kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/service/AssetService.java b/kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/service/AssetService.java
 index 3eab50474b..84b540526a 100644
 --- a/kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/service/AssetService.java
@@ -443,12 +439,13 @@ index 3eab50474b..84b540526a 100644
 -    public void addAssetInactiveNote(DocumentBase documentBase, List<Long> assets);
 -
  }
+```
+---
+*File #14*
 
+**kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/service/impl/AssetPaymentServiceImpl.java**
 
--------------------------------------------------------------------------------
-File# 14
-kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/service/impl/AssetPaymentServiceImpl.java:
-
+```diff
 diff --git a/kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/service/impl/AssetPaymentServiceImpl.java b/kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/service/impl/AssetPaymentServiceImpl.java
 index 4bddd11d20..29216e45e4 100644
 --- a/kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/service/impl/AssetPaymentServiceImpl.java
@@ -535,12 +532,13 @@ index 4bddd11d20..29216e45e4 100644
  
      /**
       * @see org.kuali.kfs.module.cam.document.service.AssetPaymentService#adjustPaymentAmounts(org.kuali.kfs.module.cam.businessobject.AssetPayment,
+```
+---
+*File #15*
 
+**kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/service/impl/AssetServiceImpl.java**
 
--------------------------------------------------------------------------------
-File# 15
-kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/service/impl/AssetServiceImpl.java:
-
+```diff
 diff --git a/kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/service/impl/AssetServiceImpl.java b/kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/service/impl/AssetServiceImpl.java
 index 3d533c1c61..e9e336f7a4 100644
 --- a/kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/service/impl/AssetServiceImpl.java
@@ -646,12 +644,13 @@ index 3d533c1c61..e9e336f7a4 100644
 -    }
 -
  }
+```
+---
+*File #16*
 
+**kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/validation/impl/AssetPaymentAllocationByAmountValidation.java**
 
--------------------------------------------------------------------------------
-File# 16
-kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/validation/impl/AssetPaymentAllocationByAmountValidation.java:
-
+```diff
 diff --git a/kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/validation/impl/AssetPaymentAllocationByAmountValidation.java b/kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/validation/impl/AssetPaymentAllocationByAmountValidation.java
 index 43c263384e..a8a0114074 100644
 --- a/kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/validation/impl/AssetPaymentAllocationByAmountValidation.java
@@ -666,12 +665,13 @@ index 43c263384e..a8a0114074 100644
              valid &= validateNonZeroAssetByAmountAllocation(assetPaymentDocument);
          }
  
+```
+---
+*File #17*
 
+**kfs-cam/src/main/resources/org/kuali/kfs/module/cam/cam-resources.properties**
 
--------------------------------------------------------------------------------
-File# 17
-kfs-cam/src/main/resources/org/kuali/kfs/module/cam/cam-resources.properties:
-
+```diff
 diff --git a/kfs-cam/src/main/resources/org/kuali/kfs/module/cam/cam-resources.properties b/kfs-cam/src/main/resources/org/kuali/kfs/module/cam/cam-resources.properties
 index 10309a4df5..8ceb937831 100644
 --- a/kfs-cam/src/main/resources/org/kuali/kfs/module/cam/cam-resources.properties
@@ -682,12 +682,13 @@ index 10309a4df5..8ceb937831 100644
  error.capitalAsset.not.allowed.system.type=Capital Asset System Type of {0} is not allowed with Capital Asset System State of {1}.
 -
 -note.list.of.inactive.assets=This document was routed to Organization Inactive route node because at the time the document was submitted the following asset(s) had an inactive organization assigned to Organization Owner: {0}.
+```
+---
+*File #18*
 
+**kfs-cam/src/main/resources/org/kuali/kfs/module/cam/db/phase5/next-release.xml**
 
--------------------------------------------------------------------------------
-File# 18
-kfs-cam/src/main/resources/org/kuali/kfs/module/cam/db/phase5/next-release.xml:
-
+```diff
 diff --git a/kfs-cam/src/main/resources/org/kuali/kfs/module/cam/db/phase5/next-release.xml b/kfs-cam/src/main/resources/org/kuali/kfs/module/cam/db/phase5/next-release.xml
 index bef158e89d..5404aa0b38 100644
 --- a/kfs-cam/src/main/resources/org/kuali/kfs/module/cam/db/phase5/next-release.xml
@@ -698,12 +699,13 @@ index bef158e89d..5404aa0b38 100644
  -->
 -<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/kfs/module/cam/db/phase5/post-rel-2017-10-19.xml"/>
 +<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/kfs/module/cam/db/phase5/post-rel-2017-11-02.xml"/>
+```
+---
+*File #19*
 
+**kfs-cg/pom.xml**
 
--------------------------------------------------------------------------------
-File# 19
-kfs-cg/pom.xml:
-
+```diff
 diff --git a/kfs-cg/pom.xml b/kfs-cg/pom.xml
 index 37cd4c39bd..0f86fb8b30 100644
 --- a/kfs-cg/pom.xml
@@ -717,12 +719,13 @@ index 37cd4c39bd..0f86fb8b30 100644
      </parent>
      <modelVersion>4.0.0</modelVersion>
  
+```
+---
+*File #20*
 
+**kfs-cg/src/main/resources/org/kuali/kfs/module/cg/db/phase5/next-release.xml**
 
--------------------------------------------------------------------------------
-File# 20
-kfs-cg/src/main/resources/org/kuali/kfs/module/cg/db/phase5/next-release.xml:
-
+```diff
 diff --git a/kfs-cg/src/main/resources/org/kuali/kfs/module/cg/db/phase5/next-release.xml b/kfs-cg/src/main/resources/org/kuali/kfs/module/cg/db/phase5/next-release.xml
 index 2b106c88b7..417b8abe68 100644
 --- a/kfs-cg/src/main/resources/org/kuali/kfs/module/cg/db/phase5/next-release.xml
@@ -733,12 +736,13 @@ index 2b106c88b7..417b8abe68 100644
  -->
 -<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/kfs/module/cg/db/phase5/post-rel-2017-10-19.xml"/>
 +<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/kfs/module/cg/db/phase5/post-rel-2017-11-02.xml"/>
+```
+---
+*File #21*
 
+**kfs-core/pom.xml**
 
--------------------------------------------------------------------------------
-File# 21
-kfs-core/pom.xml:
-
+```diff
 diff --git a/kfs-core/pom.xml b/kfs-core/pom.xml
 index 02724e41ab..428321eca4 100644
 --- a/kfs-core/pom.xml
@@ -752,12 +756,13 @@ index 02724e41ab..428321eca4 100644
      </parent>
      <modelVersion>4.0.0</modelVersion>
  
+```
+---
+*File #22*
 
+**kfs-core/src/main/java/org/kuali/kfs/coa/service/impl/OrganizationServiceImpl.java**
 
--------------------------------------------------------------------------------
-File# 22
-kfs-core/src/main/java/org/kuali/kfs/coa/service/impl/OrganizationServiceImpl.java:
-
+```diff
 diff --git a/kfs-core/src/main/java/org/kuali/kfs/coa/service/impl/OrganizationServiceImpl.java b/kfs-core/src/main/java/org/kuali/kfs/coa/service/impl/OrganizationServiceImpl.java
 index c725563345..f5503a32f2 100644
 --- a/kfs-core/src/main/java/org/kuali/kfs/coa/service/impl/OrganizationServiceImpl.java
@@ -804,12 +809,13 @@ index c725563345..f5503a32f2 100644
      }
  
      /**
+```
+---
+*File #23*
 
+**kfs-core/src/main/resources/org/kuali/kfs/core/db/phase5/next-release.xml**
 
--------------------------------------------------------------------------------
-File# 23
-kfs-core/src/main/resources/org/kuali/kfs/core/db/phase5/next-release.xml:
-
+```diff
 diff --git a/kfs-core/src/main/resources/org/kuali/kfs/core/db/phase5/next-release.xml b/kfs-core/src/main/resources/org/kuali/kfs/core/db/phase5/next-release.xml
 index 3591143217..0aceec1c3d 100644
 --- a/kfs-core/src/main/resources/org/kuali/kfs/core/db/phase5/next-release.xml
@@ -820,12 +826,13 @@ index 3591143217..0aceec1c3d 100644
  -->
 -<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd" logicalFilePath="org/kuali/kfs/core/db/phase5/post-rel-2017-10-19.xml"/>
 +<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd" logicalFilePath="org/kuali/kfs/core/db/phase5/post-rel-2017-11-02.xml"/>
+```
+---
+*File #24*
 
+**kfs-core/src/main/resources/org/kuali/rice/db/phase5/next-release.xml**
 
--------------------------------------------------------------------------------
-File# 24
-kfs-core/src/main/resources/org/kuali/rice/db/phase5/next-release.xml:
-
+```diff
 diff --git a/kfs-core/src/main/resources/org/kuali/rice/db/phase5/next-release.xml b/kfs-core/src/main/resources/org/kuali/rice/db/phase5/next-release.xml
 index c36bc18262..0dc4e2fe76 100644
 --- a/kfs-core/src/main/resources/org/kuali/rice/db/phase5/next-release.xml
@@ -836,12 +843,13 @@ index c36bc18262..0dc4e2fe76 100644
  -->
 -<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/rice/db/phase5/post-rel-2017-10-19.xml"/>
 +<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/rice/db/phase5/post-rel-2017-11-02.xml"/>
+```
+---
+*File #25*
 
+**kfs-datatools/pom.xml**
 
--------------------------------------------------------------------------------
-File# 25
-kfs-datatools/pom.xml:
-
+```diff
 diff --git a/kfs-datatools/pom.xml b/kfs-datatools/pom.xml
 index 51cb3a87f0..4e49d769cf 100644
 --- a/kfs-datatools/pom.xml
@@ -855,12 +863,13 @@ index 51cb3a87f0..4e49d769cf 100644
      </parent>
      <modelVersion>4.0.0</modelVersion>
  
+```
+---
+*File #26*
 
+**kfs-ec/pom.xml**
 
--------------------------------------------------------------------------------
-File# 26
-kfs-ec/pom.xml:
-
+```diff
 diff --git a/kfs-ec/pom.xml b/kfs-ec/pom.xml
 index c43949d3cd..59744ac27f 100644
 --- a/kfs-ec/pom.xml
@@ -874,12 +883,13 @@ index c43949d3cd..59744ac27f 100644
      </parent>
      <modelVersion>4.0.0</modelVersion>
  
+```
+---
+*File #27*
 
+**kfs-ec/src/main/resources/org/kuali/kfs/module/ec/db/phase5/next-release.xml**
 
--------------------------------------------------------------------------------
-File# 27
-kfs-ec/src/main/resources/org/kuali/kfs/module/ec/db/phase5/next-release.xml:
-
+```diff
 diff --git a/kfs-ec/src/main/resources/org/kuali/kfs/module/ec/db/phase5/next-release.xml b/kfs-ec/src/main/resources/org/kuali/kfs/module/ec/db/phase5/next-release.xml
 index dd3270c19a..eb83d644ab 100644
 --- a/kfs-ec/src/main/resources/org/kuali/kfs/module/ec/db/phase5/next-release.xml
@@ -890,12 +900,13 @@ index dd3270c19a..eb83d644ab 100644
  -->
 -<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/kfs/module/ec/db/phase5/post-rel-2017-10-19.xml"/>
 +<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/kfs/module/ec/db/phase5/post-rel-2017-11-02.xml"/>
+```
+---
+*File #28*
 
+**kfs-kc/pom.xml**
 
--------------------------------------------------------------------------------
-File# 28
-kfs-kc/pom.xml:
-
+```diff
 diff --git a/kfs-kc/pom.xml b/kfs-kc/pom.xml
 index 51953503d2..905adbe1de 100644
 --- a/kfs-kc/pom.xml
@@ -909,12 +920,13 @@ index 51953503d2..905adbe1de 100644
      </parent>
      <modelVersion>4.0.0</modelVersion>
  
+```
+---
+*File #29*
 
+**kfs-kc/src/main/resources/org/kuali/kfs/module/kc/db/phase5/next-release.xml**
 
--------------------------------------------------------------------------------
-File# 29
-kfs-kc/src/main/resources/org/kuali/kfs/module/kc/db/phase5/next-release.xml:
-
+```diff
 diff --git a/kfs-kc/src/main/resources/org/kuali/kfs/module/kc/db/phase5/next-release.xml b/kfs-kc/src/main/resources/org/kuali/kfs/module/kc/db/phase5/next-release.xml
 index cbc8daf4f7..cbad8901d2 100644
 --- a/kfs-kc/src/main/resources/org/kuali/kfs/module/kc/db/phase5/next-release.xml
@@ -925,12 +937,13 @@ index cbc8daf4f7..cbad8901d2 100644
  -->
 -<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/kfs/module/kc/db/phase5/post-rel-2017-10-19.xml"/>
 +<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/kfs/module/kc/db/phase5/post-rel-2017-11-02.xml"/>
+```
+---
+*File #30*
 
+**kfs-kns/pom.xml**
 
--------------------------------------------------------------------------------
-File# 30
-kfs-kns/pom.xml:
-
+```diff
 diff --git a/kfs-kns/pom.xml b/kfs-kns/pom.xml
 index 4f01c6eb53..20df5bdd97 100644
 --- a/kfs-kns/pom.xml
@@ -944,12 +957,13 @@ index 4f01c6eb53..20df5bdd97 100644
      </parent>
      <modelVersion>4.0.0</modelVersion>
  
+```
+---
+*File #31*
 
+**kfs-kns/src/main/java/org/kuali/kfs/kns/inquiry/KualiInquirableImpl.java**
 
--------------------------------------------------------------------------------
-File# 31
-kfs-kns/src/main/java/org/kuali/kfs/kns/inquiry/KualiInquirableImpl.java:
-
+```diff
 diff --git a/kfs-kns/src/main/java/org/kuali/kfs/kns/inquiry/KualiInquirableImpl.java b/kfs-kns/src/main/java/org/kuali/kfs/kns/inquiry/KualiInquirableImpl.java
 index 243640a356..93eb284547 100644
 --- a/kfs-kns/src/main/java/org/kuali/kfs/kns/inquiry/KualiInquirableImpl.java
@@ -975,12 +989,13 @@ index 243640a356..93eb284547 100644
              // build key value url parameters used to retrieve the business object
              String keyName = null;
              String keyConversion = null;
+```
+---
+*File #32*
 
+**kfs-kns/src/main/java/org/kuali/kfs/krad/dao/impl/LookupDaoOjb.java**
 
--------------------------------------------------------------------------------
-File# 32
-kfs-kns/src/main/java/org/kuali/kfs/krad/dao/impl/LookupDaoOjb.java:
-
+```diff
 diff --git a/kfs-kns/src/main/java/org/kuali/kfs/krad/dao/impl/LookupDaoOjb.java b/kfs-kns/src/main/java/org/kuali/kfs/krad/dao/impl/LookupDaoOjb.java
 index ad094db557..1e7da00f56 100644
 --- a/kfs-kns/src/main/java/org/kuali/kfs/krad/dao/impl/LookupDaoOjb.java
@@ -1026,12 +1041,13 @@ index ad094db557..1e7da00f56 100644
      /**
       * Adds to the criteria object based on query characters given
       */
+```
+---
+*File #33*
 
+**kfs-kns/src/main/java/org/kuali/kfs/krad/maintenance/MaintenanceDocumentBase.java**
 
--------------------------------------------------------------------------------
-File# 33
-kfs-kns/src/main/java/org/kuali/kfs/krad/maintenance/MaintenanceDocumentBase.java:
-
+```diff
 diff --git a/kfs-kns/src/main/java/org/kuali/kfs/krad/maintenance/MaintenanceDocumentBase.java b/kfs-kns/src/main/java/org/kuali/kfs/krad/maintenance/MaintenanceDocumentBase.java
 index 2707a80ef4..8a73b51d18 100644
 --- a/kfs-kns/src/main/java/org/kuali/kfs/krad/maintenance/MaintenanceDocumentBase.java
@@ -1055,12 +1071,13 @@ index 2707a80ef4..8a73b51d18 100644
          }
          return notes;
      }
+```
+---
+*File #34*
 
+**kfs-kns/src/main/java/org/kuali/kfs/krad/service/impl/MaintainableXMLConversionServiceImpl.java**
 
--------------------------------------------------------------------------------
-File# 34
-kfs-kns/src/main/java/org/kuali/kfs/krad/service/impl/MaintainableXMLConversionServiceImpl.java:
-
+```diff
 diff --git a/kfs-kns/src/main/java/org/kuali/kfs/krad/service/impl/MaintainableXMLConversionServiceImpl.java b/kfs-kns/src/main/java/org/kuali/kfs/krad/service/impl/MaintainableXMLConversionServiceImpl.java
 index 616aafc171..b9ce96fc44 100644
 --- a/kfs-kns/src/main/java/org/kuali/kfs/krad/service/impl/MaintainableXMLConversionServiceImpl.java
@@ -1100,12 +1117,13 @@ index 616aafc171..b9ce96fc44 100644
      }
  
      public List<String> getConversionRuleFiles() {
+```
+---
+*File #35*
 
+**kfs-kns/src/main/java/org/kuali/kfs/krad/service/MaintainableXMLConversionService.java**
 
--------------------------------------------------------------------------------
-File# 35
-kfs-kns/src/main/java/org/kuali/kfs/krad/service/MaintainableXMLConversionService.java:
-
+```diff
 diff --git a/kfs-kns/src/main/java/org/kuali/kfs/krad/service/MaintainableXMLConversionService.java b/kfs-kns/src/main/java/org/kuali/kfs/krad/service/MaintainableXMLConversionService.java
 index 2f415e1eb8..f7d77de88e 100644
 --- a/kfs-kns/src/main/java/org/kuali/kfs/krad/service/MaintainableXMLConversionService.java
@@ -1117,12 +1135,13 @@ index 2f415e1eb8..f7d77de88e 100644
 +
 +    String transformMaintainableNoteXML(String xml);
  }
+```
+---
+*File #36*
 
+**kfs-ld/pom.xml**
 
--------------------------------------------------------------------------------
-File# 36
-kfs-ld/pom.xml:
-
+```diff
 diff --git a/kfs-ld/pom.xml b/kfs-ld/pom.xml
 index 5f2fc5c3be..d302887530 100644
 --- a/kfs-ld/pom.xml
@@ -1136,12 +1155,13 @@ index 5f2fc5c3be..d302887530 100644
      </parent>
      <modelVersion>4.0.0</modelVersion>
  
+```
+---
+*File #37*
 
+**kfs-ld/src/main/resources/org/kuali/kfs/module/ld/db/phase5/next-release.xml**
 
--------------------------------------------------------------------------------
-File# 37
-kfs-ld/src/main/resources/org/kuali/kfs/module/ld/db/phase5/next-release.xml:
-
+```diff
 diff --git a/kfs-ld/src/main/resources/org/kuali/kfs/module/ld/db/phase5/next-release.xml b/kfs-ld/src/main/resources/org/kuali/kfs/module/ld/db/phase5/next-release.xml
 index 0c0ffa59cf..7bf65df5c0 100644
 --- a/kfs-ld/src/main/resources/org/kuali/kfs/module/ld/db/phase5/next-release.xml
@@ -1152,12 +1172,13 @@ index 0c0ffa59cf..7bf65df5c0 100644
  -->
 -<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/kfs/module/ld/db/phase5/post-rel-2017-10-19.xml"/>
 +<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/kfs/module/ld/db/phase5/post-rel-2017-11-02.xml"/>
+```
+---
+*File #38*
 
+**kfs-purap/pom.xml**
 
--------------------------------------------------------------------------------
-File# 38
-kfs-purap/pom.xml:
-
+```diff
 diff --git a/kfs-purap/pom.xml b/kfs-purap/pom.xml
 index 62ef01fe38..a1ba863c7a 100644
 --- a/kfs-purap/pom.xml
@@ -1171,12 +1192,13 @@ index 62ef01fe38..a1ba863c7a 100644
      </parent>
      <modelVersion>4.0.0</modelVersion>
  
+```
+---
+*File #39*
 
+**kfs-purap/src/main/resources/org/kuali/kfs/module/purap/db/phase5/next-release.xml**
 
--------------------------------------------------------------------------------
-File# 39
-kfs-purap/src/main/resources/org/kuali/kfs/module/purap/db/phase5/next-release.xml:
-
+```diff
 diff --git a/kfs-purap/src/main/resources/org/kuali/kfs/module/purap/db/phase5/next-release.xml b/kfs-purap/src/main/resources/org/kuali/kfs/module/purap/db/phase5/next-release.xml
 index 49dfac6c9d..cd6b5be55b 100644
 --- a/kfs-purap/src/main/resources/org/kuali/kfs/module/purap/db/phase5/next-release.xml
@@ -1187,12 +1209,13 @@ index 49dfac6c9d..cd6b5be55b 100644
  -->
 -<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/kfs/module/purap/db/phase5/post-rel-2017-10-19.xml"/>
 +<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/kfs/module/purap/db/phase5/post-rel-2017-11-02.xml"/>
+```
+---
+*File #40*
 
+**kfs-web/pom.xml**
 
--------------------------------------------------------------------------------
-File# 40
-kfs-web/pom.xml:
-
+```diff
 diff --git a/kfs-web/pom.xml b/kfs-web/pom.xml
 index d7f1191800..09008e4524 100644
 --- a/kfs-web/pom.xml
@@ -1206,12 +1229,13 @@ index d7f1191800..09008e4524 100644
      </parent>
      <modelVersion>4.0.0</modelVersion>
  
+```
+---
+*File #41*
 
+**kfs-web/src/main/webapp/css/newPortal.css**
 
--------------------------------------------------------------------------------
-File# 41
-kfs-web/src/main/webapp/css/newPortal.css:
-
+```diff
 diff --git a/kfs-web/src/main/webapp/css/newPortal.css b/kfs-web/src/main/webapp/css/newPortal.css
 index 55f4abe5ed..f5ddba2b84 100644
 --- a/kfs-web/src/main/webapp/css/newPortal.css
@@ -1227,12 +1251,13 @@ index 55f4abe5ed..f5ddba2b84 100644
  header.navbar {
      height: 60px;
      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+```
+---
+*File #42*
 
+**kfs-web/src/main/webapp/package.json**
 
--------------------------------------------------------------------------------
-File# 42
-kfs-web/src/main/webapp/package.json:
-
+```diff
 diff --git a/kfs-web/src/main/webapp/package.json b/kfs-web/src/main/webapp/package.json
 index 74b7b0ceb4..d3d771c0cc 100644
 --- a/kfs-web/src/main/webapp/package.json
@@ -1246,12 +1271,13 @@ index 74b7b0ceb4..d3d771c0cc 100644
      "babel-core": "6.26",
      "babel-loader": "6.2.4",
      "babel-preset-es2015": "6.6.0",
+```
+---
+*File #43*
 
+**kfs-web/src/main/webapp/package-lock.json**
 
--------------------------------------------------------------------------------
-File# 43
-kfs-web/src/main/webapp/package-lock.json:
-
+```diff
 diff --git a/kfs-web/src/main/webapp/package-lock.json b/kfs-web/src/main/webapp/package-lock.json
 index f7607aab8b..07ae90f17a 100644
 --- a/kfs-web/src/main/webapp/package-lock.json
@@ -1420,12 +1446,13 @@ index f7607aab8b..07ae90f17a 100644
      "xml2js": {
        "version": "0.4.19",
        "resolved": "https://registry.npmjs.org/xml2js/-/xml2js-0.4.19.tgz",
+```
+---
+*File #44*
 
+**kfs-web/src/main/webapp/WEB-INF/tags/module/cams/assetPaymentsAssetInformation.tag**
 
--------------------------------------------------------------------------------
-File# 44
-kfs-web/src/main/webapp/WEB-INF/tags/module/cams/assetPaymentsAssetInformation.tag:
-
+```diff
 diff --git a/kfs-web/src/main/webapp/WEB-INF/tags/module/cams/assetPaymentsAssetInformation.tag b/kfs-web/src/main/webapp/WEB-INF/tags/module/cams/assetPaymentsAssetInformation.tag
 index 9967c10f23..e2d5e5bd4d 100644
 --- a/kfs-web/src/main/webapp/WEB-INF/tags/module/cams/assetPaymentsAssetInformation.tag
@@ -1439,12 +1466,13 @@ index 9967c10f23..e2d5e5bd4d 100644
                                   render="true">
                          <html:hidden write="true"
                                       property="document.assetPaymentAssetDetail[${ctr}].capitalAssetNumber"/>
+```
+---
+*File #45*
 
+**kfs-web/src/main/webapp/WEB-INF/tags/module/cams/viewPaymentInProcessByAsset.tag**
 
--------------------------------------------------------------------------------
-File# 45
-kfs-web/src/main/webapp/WEB-INF/tags/module/cams/viewPaymentInProcessByAsset.tag:
-
+```diff
 diff --git a/kfs-web/src/main/webapp/WEB-INF/tags/module/cams/viewPaymentInProcessByAsset.tag b/kfs-web/src/main/webapp/WEB-INF/tags/module/cams/viewPaymentInProcessByAsset.tag
 index 20417a97bb..0d34b45c4b 100644
 --- a/kfs-web/src/main/webapp/WEB-INF/tags/module/cams/viewPaymentInProcessByAsset.tag
@@ -1458,12 +1486,13 @@ index 20417a97bb..0d34b45c4b 100644
                                                       render="true">
                                              <html:hidden write="true"
                                                           property="document.assetPaymentAssetDetail[${pos}].capitalAssetNumber"/>
+```
+---
+*File #46*
 
+**kfs-web/src/main/webapp/WEB-INF/tags/module/ec/detailLineDataCell.tag**
 
--------------------------------------------------------------------------------
-File# 46
-kfs-web/src/main/webapp/WEB-INF/tags/module/ec/detailLineDataCell.tag:
-
+```diff
 diff --git a/kfs-web/src/main/webapp/WEB-INF/tags/module/ec/detailLineDataCell.tag b/kfs-web/src/main/webapp/WEB-INF/tags/module/ec/detailLineDataCell.tag
 index 8de6384828..32616d1ea9 100644
 --- a/kfs-web/src/main/webapp/WEB-INF/tags/module/ec/detailLineDataCell.tag
@@ -1477,12 +1506,13 @@ index 8de6384828..32616d1ea9 100644
     	</span>
  
     	<c:if test="${withHiddenForm}">
+```
+---
+*File #47*
 
+**kfs-web/src/main/webapp/WEB-INF/tags/module/purap/taxitems.tag**
 
--------------------------------------------------------------------------------
-File# 47
-kfs-web/src/main/webapp/WEB-INF/tags/module/purap/taxitems.tag:
-
+```diff
 diff --git a/kfs-web/src/main/webapp/WEB-INF/tags/module/purap/taxitems.tag b/kfs-web/src/main/webapp/WEB-INF/tags/module/purap/taxitems.tag
 index 0983a167c7..504f5b4f62 100644
 --- a/kfs-web/src/main/webapp/WEB-INF/tags/module/purap/taxitems.tag
@@ -1615,12 +1645,13 @@ index 0983a167c7..504f5b4f62 100644
 +    </table>
 +</div>
 \ No newline at end of file
+```
+---
+*File #48*
 
+**pom.xml**
 
--------------------------------------------------------------------------------
-File# 48
-pom.xml:
-
+```diff
 diff --git a/pom.xml b/pom.xml
 index 2e123682f4..dc90ae5d82 100644
 --- a/pom.xml
@@ -1634,5 +1665,4 @@ index 2e123682f4..dc90ae5d82 100644
      <name>Kuali Financial System</name>
      <description>a comprehensive financial management system for higher education.</description>
      <inceptionYear>2005</inceptionYear>
-
-
+```
