@@ -3,103 +3,24 @@ Changes between releases 2017-10-19 and 2017-11-02
 ## Database File Changes
 ## **Duplicate File Changes**
 ---
-*File# 1*
+*File #1*
 
 **kfs-ar/src/main/java/org/kuali/kfs/module/ar/report/service/impl/AccountsReceivableReportServiceImpl.java**
 
-``` diff
-diff --git a/kfs-ar/src/main/java/org/kuali/kfs/module/ar/report/service/impl/AccountsReceivableReportServiceImpl.java b/kfs-ar/src/main/java/org/kuali/kfs/module/ar/report/service/impl/AccountsReceivableReportServiceImpl.java
-index 7885d16118..78294044b1 100644
---- a/kfs-ar/src/main/java/org/kuali/kfs/module/ar/report/service/impl/AccountsReceivableReportServiceImpl.java
-+++ b/kfs-ar/src/main/java/org/kuali/kfs/module/ar/report/service/impl/AccountsReceivableReportServiceImpl.java
-@@ -306,7 +306,7 @@ public class AccountsReceivableReportServiceImpl implements AccountsReceivableRe
-                 shipCityStateZip = generateCityStateZipLine(shipToAddr.getCustomerCityName(), shipToAddr.getCustomerStateCode(), shipToAddr.getCustomerZipCode());
-             } else {
-                 shipCityStateZip = generateCityStateZipLine(shipToAddr.getCustomerCityName(), shipToAddr.getCustomerAddressInternationalProvinceName(), shipToAddr.getCustomerInternationalMailCode());
--                customerMap.put("shipToCountry", shipToAddr.getCustomerCountry().getName());
-+                customerMap.put("shipToCountry", shipToAddr.getCustomerCountry().getName().toUpperCase());
-             }
-             customerMap.put("shipToCityStateZip", shipCityStateZip);
-         }
-@@ -427,7 +427,7 @@ public class AccountsReceivableReportServiceImpl implements AccountsReceivableRe
-                 billCityStateZip = generateCityStateZipLine(billToAddr.getCustomerCityName(), billToAddr.getCustomerStateCode(), billToAddr.getCustomerZipCode());
-             } else {
-                 billCityStateZip = generateCityStateZipLine(billToAddr.getCustomerCityName(), billToAddr.getCustomerAddressInternationalProvinceName(), billToAddr.getCustomerInternationalMailCode());
--                customerMap.put("billToCountry", billToAddr.getCustomerCountry().getName());
-+                customerMap.put("billToCountry", billToAddr.getCustomerCountry().getName().toUpperCase());
-             }
-             customerMap.put("billToCityStateZip", billCityStateZip);
-         }
-
-```
 ---
-*File# 2*
+*File #2*
 
 **kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/AssetMaintainableImpl.java**
 
-diff --git a/kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/AssetMaintainableImpl.java b/kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/AssetMaintainableImpl.java
-index 4c9c53a91c..a269bf25ca 100644
---- a/kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/AssetMaintainableImpl.java
-+++ b/kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/AssetMaintainableImpl.java
-@@ -391,7 +391,6 @@ public class AssetMaintainableImpl extends FinancialSystemMaintainable {
-                 return false;
-             }
- 
--            assetService.addAssetInactiveNote(documentBase, asset.getCapitalAssetNumber());
-             return true;
-         } else {
-             return false;
-
-
 ---
-*File# 3*
+*File #3*
 
 **kfs-kns/src/main/resources/org/kuali/kfs/krad/config/MaintainableXMLUpgradeRules.xml**
 
-diff --git a/kfs-kns/src/main/resources/org/kuali/kfs/krad/config/MaintainableXMLUpgradeRules.xml b/kfs-kns/src/main/resources/org/kuali/kfs/krad/config/MaintainableXMLUpgradeRules.xml
-index 604c73fa58..05fe0ffa6d 100644
---- a/kfs-kns/src/main/resources/org/kuali/kfs/krad/config/MaintainableXMLUpgradeRules.xml
-+++ b/kfs-kns/src/main/resources/org/kuali/kfs/krad/config/MaintainableXMLUpgradeRules.xml
-@@ -76,6 +76,14 @@
-             <match>org.kuali.rice.kim.bo.impl.ReviewResponsibility</match>
-             <replacement>org.kuali.rice.kim.impl.responsibility.ReviewResponsibilityBo</replacement>
-         </pattern>
-+        <pattern>
-+            <match>org.kuali.rice.krad.bo.AdHocRoutePerson</match>
-+            <replacement>org.kuali.kfs.krad.bo.AdHocRoutePerson</replacement>
-+        </pattern>
-+        <pattern>
-+            <match>org.kuali.rice.krad.bo.Note</match>
-+            <replacement>org.kuali.kfs.krad.bo.Note</replacement>
-+        </pattern>
-     </rule>
- 
-     <!-- Rules specifying any change in class properties.
-
-
 ---
-*File# 4*
+*File #4*
 
 **kfs-cam/src/main/resources/org/kuali/kfs/module/cam/spring-cam.xml**
-
-diff --git a/kfs-cam/src/main/resources/org/kuali/kfs/module/cam/spring-cam.xml b/kfs-cam/src/main/resources/org/kuali/kfs/module/cam/spring-cam.xml
-index 5e2efa0ed0..1c6332ce6e 100644
---- a/kfs-cam/src/main/resources/org/kuali/kfs/module/cam/spring-cam.xml
-+++ b/kfs-cam/src/main/resources/org/kuali/kfs/module/cam/spring-cam.xml
-@@ -304,12 +304,9 @@
-     <bean id="assetService" parent="assetService-parentBean"/>
-     <bean id="assetService-parentBean" class="org.kuali.kfs.module.cam.document.service.impl.AssetServiceImpl" abstract="true">
-         <property name="businessObjectService" ref="businessObjectService"/>
--        <property name="configurationService" ref="kualiConfigurationService"/>
--        <property name="noteService" ref="noteService"/>
-         <property name="objectCodeService" ref="objectCodeService"/>
-         <property name="parameterService" ref="parameterService"/>
-         <property name="paymentSummaryService" ref="paymentSummaryService"/>
--        <property name="personService" ref="personService"/>
-     </bean>
- 
-     <bean id="assetTransferService" parent="assetTransferService-parentBean"/>
-
 
 ###################################################################################
 \PROPERTY FILES CHNAGES:
