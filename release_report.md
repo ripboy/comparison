@@ -7,20 +7,24 @@ Changes between releases 2017-10-19 and 2017-11-02
 
 **kfs-ar/src/main/java/org/kuali/kfs/module/ar/report/service/impl/AccountsReceivableReportServiceImpl.java**
 
+
 ---
 *File #2*
 
 **kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/AssetMaintainableImpl.java**
+
 
 ---
 *File #3*
 
 **kfs-kns/src/main/resources/org/kuali/kfs/krad/config/MaintainableXMLUpgradeRules.xml**
 
+
 ---
 *File #4*
 
 **kfs-cam/src/main/resources/org/kuali/kfs/module/cam/spring-cam.xml**
+
 
 ###################################################################################
 \PROPERTY FILES CHNAGES:
