@@ -1668,7 +1668,7 @@ index 2e123682f4..dc90ae5d82 100644
 ---
 *File #49*
 
-**pom.xml**
+**CHANGELOG.txt**
 
 ```diff
 diff --git a/CHANGELOG.txt b/CHANGELOG.txt
