@@ -7,6 +7,7 @@ Changes between releases 2017-10-19 and 2017-11-02
 
 **kfs-ar/src/main/java/org/kuali/kfs/module/ar/report/service/impl/AccountsReceivableReportServiceImpl.java**
 
+``` diff
 diff --git a/kfs-ar/src/main/java/org/kuali/kfs/module/ar/report/service/impl/AccountsReceivableReportServiceImpl.java b/kfs-ar/src/main/java/org/kuali/kfs/module/ar/report/service/impl/AccountsReceivableReportServiceImpl.java
 index 7885d16118..78294044b1 100644
 --- a/kfs-ar/src/main/java/org/kuali/kfs/module/ar/report/service/impl/AccountsReceivableReportServiceImpl.java
