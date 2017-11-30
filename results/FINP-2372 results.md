@@ -24,7 +24,7 @@ null
 
 
 **Comments**
-Thanks, new error. See below. I'm putting a XML definition to convert that as well.\r\n\r\n{code}\r\n---- Debugging information ----\r\nmessage             : Cannot convert type org.kuali.kfs.krad.bo.AdHocRoutePerson to type org.kuali.rice.krad.bo.AdHocRouteRecipient\r\nclass               : org.kuali.rice.krad.bo.Note\r\nrequired-type       : org.kuali.rice.krad.bo.Note\r\nconverter-type      : com.thoughtworks.xstream.converters.reflection.ReflectionConverter\r\npath                : /org.apache.ojb.broker.core.proxy.ListProxyDefaultImpl/org.kuali.rice.krad.bo.Note/adHocRouteRecipient\r\nline number         : 13\r\nclass[1]            : java.util.ArrayList\r\nconverter-type[1]   : com.thoughtworks.xstream.converters.collections.CollectionConverter\r\nversion             : 1.4.10\r\n-------------------------------\r\n{code}\r\n
+Thanks, new error. See below. I'm putting a XML definition to convert that as well.\r\n\r\n{code}\r\\n---- Debugging information ----\r\nmessage             : Cannot convert type org.kuali.kfs.krad.bo.AdHocRoutePerson to type org.kuali.rice.krad.bo.AdHocRouteRecipient\r\nclass               : org.kuali.rice.krad.bo.Note\r\nrequired-type       : org.kuali.rice.krad.bo.Note\r\nconverter-type      : com.thoughtworks.xstream.converters.reflection.ReflectionConverter\r\npath                : /org.apache.ojb.broker.core.proxy.ListProxyDefaultImpl/org.kuali.rice.krad.bo.Note/adHocRouteRecipient\r\nline number         : 13\r\nclass[1]            : java.util.ArrayList\r\nconverter-type[1]   : com.thoughtworks.xstream.converters.collections.CollectionConverter\r\nversion             : 1.4.10\r\n-------------------------------\r\n{code}\r\n
 
 
 
