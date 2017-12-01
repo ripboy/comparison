@@ -1,4 +1,0 @@
-kfs-ar/src/main/java/org/kuali/kfs/module/ar/report/service/impl/AccountsReceivableReportServiceImpl.java
-kfs-cam/src/main/java/org/kuali/kfs/module/cam/document/AssetMaintainableImpl.java
-kfs-kns/src/main/resources/org/kuali/kfs/krad/config/MaintainableXMLUpgradeRules.xml
-kfs-cam/src/main/resources/org/kuali/kfs/module/cam/spring-cam.xml

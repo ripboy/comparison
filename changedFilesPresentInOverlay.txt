@@ -1,4 +1,0 @@
-src/main/java/edu/iu/ebs/kfs/module/ar/report/service/impl/AccountsReceivableReportServiceImpl.java
-src/main/java/edu/iu/ebs/kfs/module/cam/document/AssetMaintainableImpl.java
-src/main/resources/edu/iu/ebs/kfs/module/cam/spring-cam.xml
-src/main/resources/edu/iu/ebs/kfs/krad/config/MaintainableXMLUpgradeRules.xml
