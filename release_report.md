@@ -1,8 +1,9 @@
 # Release Report
 Changes made between releases 2017-11-02 and 2017-11-30
 ## Database File Changes
-File #1
-kfs-cam/src/main/resources/org/kuali/kfs/module/cam/db/phase5/2017-11-30.xml:
+*File #1*
+
+**kfs-cam/src/main/resources/org/kuali/kfs/module/cam/db/phase5/2017-11-30.xml**
 
 ```diff
 diff --git a/kfs-cam/src/main/resources/org/kuali/kfs/module/cam/db/phase5/2017-11-30.xml b/kfs-cam/src/main/resources/org/kuali/kfs/module/cam/db/phase5/2017-11-30.xml
@@ -46,8 +47,9 @@ index 0000000000..024d66628e
 
 
 ---
-File #2
-kfs-core/src/main/resources/org/kuali/kfs/core/db/phase5/2017-11-30.xml:
+*File #2*
+
+**kfs-core/src/main/resources/org/kuali/kfs/core/db/phase5/2017-11-30.xml**
 
 ```diff
 diff --git a/kfs-core/src/main/resources/org/kuali/kfs/core/db/phase5/2017-11-30.xml b/kfs-core/src/main/resources/org/kuali/kfs/core/db/phase5/2017-11-30.xml
@@ -91,8 +93,9 @@ index 0000000000..437f6a3706
 
 
 ---
-File #3
-kfs-core/src/main/resources/org/kuali/rice/db/phase5/2017-11-30.xml:
+*File #3*
+
+**kfs-core/src/main/resources/org/kuali/rice/db/phase5/2017-11-30.xml**
 
 ```diff
 diff --git a/kfs-core/src/main/resources/org/kuali/rice/db/phase5/2017-11-30.xml b/kfs-core/src/main/resources/org/kuali/rice/db/phase5/2017-11-30.xml
@@ -276,159 +279,6 @@ index 9ae0897bb7..74c2f420eb 100644
 ---
 *File #6*
 
-**kfs-ar/src/main/resources/org/kuali/kfs/module/ar/db/phase5/next-release.xml**
-
-```diff
-diff --git a/kfs-ar/src/main/resources/org/kuali/kfs/module/ar/db/phase5/next-release.xml b/kfs-ar/src/main/resources/org/kuali/kfs/module/ar/db/phase5/next-release.xml
-index 4d94e80679..79497aed76 100644
---- a/kfs-ar/src/main/resources/org/kuali/kfs/module/ar/db/phase5/next-release.xml
-+++ b/kfs-ar/src/main/resources/org/kuali/kfs/module/ar/db/phase5/next-release.xml
-@@ -19,4 +19,4 @@
-     along with this program.  If not, see <http://www.gnu.org/licenses/>.
- 
- -->
--<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/kfs/module/ar/db/phase5/post-rel-2017-11-02.xml"/>
-+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/kfs/module/ar/db/phase5/post-rel-2017-11-30.xml"/>
-```
----
-*File #7*
-
-**kfs-cam/src/main/resources/org/kuali/kfs/module/cam/db/phase5/next-release.xml**
-
-```diff
-diff --git a/kfs-cam/src/main/resources/org/kuali/kfs/module/cam/db/phase5/next-release.xml b/kfs-cam/src/main/resources/org/kuali/kfs/module/cam/db/phase5/next-release.xml
-index 5404aa0b38..cd4b00548c 100644
---- a/kfs-cam/src/main/resources/org/kuali/kfs/module/cam/db/phase5/next-release.xml
-+++ b/kfs-cam/src/main/resources/org/kuali/kfs/module/cam/db/phase5/next-release.xml
-@@ -19,4 +19,4 @@
-     along with this program.  If not, see <http://www.gnu.org/licenses/>.
- 
- -->
--<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/kfs/module/cam/db/phase5/post-rel-2017-11-02.xml"/>
-+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/kfs/module/cam/db/phase5/post-rel-2017-11-30.xml"/>
-```
----
-*File #8*
-
-**kfs-cg/src/main/resources/org/kuali/kfs/module/cg/db/phase5/next-release.xml**
-
-```diff
-diff --git a/kfs-cg/src/main/resources/org/kuali/kfs/module/cg/db/phase5/next-release.xml b/kfs-cg/src/main/resources/org/kuali/kfs/module/cg/db/phase5/next-release.xml
-index 417b8abe68..33fdd93573 100644
---- a/kfs-cg/src/main/resources/org/kuali/kfs/module/cg/db/phase5/next-release.xml
-+++ b/kfs-cg/src/main/resources/org/kuali/kfs/module/cg/db/phase5/next-release.xml
-@@ -19,4 +19,4 @@
-     along with this program.  If not, see <http://www.gnu.org/licenses/>.
- 
- -->
--<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/kfs/module/cg/db/phase5/post-rel-2017-11-02.xml"/>
-+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/kfs/module/cg/db/phase5/post-rel-2017-11-30.xml"/>
-```
----
-*File #9*
-
-**kfs-core/src/main/resources/org/kuali/kfs/core/db/phase5/next-release.xml**
-
-```diff
-diff --git a/kfs-core/src/main/resources/org/kuali/kfs/core/db/phase5/next-release.xml b/kfs-core/src/main/resources/org/kuali/kfs/core/db/phase5/next-release.xml
-index 0aceec1c3d..11574298ce 100644
---- a/kfs-core/src/main/resources/org/kuali/kfs/core/db/phase5/next-release.xml
-+++ b/kfs-core/src/main/resources/org/kuali/kfs/core/db/phase5/next-release.xml
-@@ -19,4 +19,4 @@
-     along with this program.  If not, see <http://www.gnu.org/licenses/>.
- 
- -->
--<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd" logicalFilePath="org/kuali/kfs/core/db/phase5/post-rel-2017-11-02.xml"/>
-+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd" logicalFilePath="org/kuali/kfs/core/db/phase5/post-rel-2017-11-30.xml"/>
-```
----
-*File #10*
-
-**kfs-core/src/main/resources/org/kuali/rice/db/phase5/next-release.xml**
-
-```diff
-diff --git a/kfs-core/src/main/resources/org/kuali/rice/db/phase5/next-release.xml b/kfs-core/src/main/resources/org/kuali/rice/db/phase5/next-release.xml
-index 0dc4e2fe76..df8c17d938 100644
---- a/kfs-core/src/main/resources/org/kuali/rice/db/phase5/next-release.xml
-+++ b/kfs-core/src/main/resources/org/kuali/rice/db/phase5/next-release.xml
-@@ -19,4 +19,4 @@
-     along with this program.  If not, see <http://www.gnu.org/licenses/>.
- 
- -->
--<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/rice/db/phase5/post-rel-2017-11-02.xml"/>
-+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/rice/db/phase5/post-rel-2017-11-30.xml"/>
-```
----
-*File #11*
-
-**kfs-ec/src/main/resources/org/kuali/kfs/module/ec/db/phase5/next-release.xml**
-
-```diff
-diff --git a/kfs-ec/src/main/resources/org/kuali/kfs/module/ec/db/phase5/next-release.xml b/kfs-ec/src/main/resources/org/kuali/kfs/module/ec/db/phase5/next-release.xml
-index eb83d644ab..1e851a57c1 100644
---- a/kfs-ec/src/main/resources/org/kuali/kfs/module/ec/db/phase5/next-release.xml
-+++ b/kfs-ec/src/main/resources/org/kuali/kfs/module/ec/db/phase5/next-release.xml
-@@ -19,4 +19,4 @@
-     along with this program.  If not, see <http://www.gnu.org/licenses/>.
- 
- -->
--<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/kfs/module/ec/db/phase5/post-rel-2017-11-02.xml"/>
-+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/kfs/module/ec/db/phase5/post-rel-2017-11-30.xml"/>
-```
----
-*File #12*
-
-**kfs-kc/src/main/resources/org/kuali/kfs/module/kc/db/phase5/next-release.xml**
-
-```diff
-diff --git a/kfs-kc/src/main/resources/org/kuali/kfs/module/kc/db/phase5/next-release.xml b/kfs-kc/src/main/resources/org/kuali/kfs/module/kc/db/phase5/next-release.xml
-index cbad8901d2..4b72593704 100644
---- a/kfs-kc/src/main/resources/org/kuali/kfs/module/kc/db/phase5/next-release.xml
-+++ b/kfs-kc/src/main/resources/org/kuali/kfs/module/kc/db/phase5/next-release.xml
-@@ -19,4 +19,4 @@
-     along with this program.  If not, see <http://www.gnu.org/licenses/>.
- 
- -->
--<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/kfs/module/kc/db/phase5/post-rel-2017-11-02.xml"/>
-+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/kfs/module/kc/db/phase5/post-rel-2017-11-30.xml"/>
-```
----
-*File #13*
-
-**kfs-ld/src/main/resources/org/kuali/kfs/module/ld/db/phase5/next-release.xml**
-
-```diff
-diff --git a/kfs-ld/src/main/resources/org/kuali/kfs/module/ld/db/phase5/next-release.xml b/kfs-ld/src/main/resources/org/kuali/kfs/module/ld/db/phase5/next-release.xml
-index 7bf65df5c0..cfa4d21e72 100644
---- a/kfs-ld/src/main/resources/org/kuali/kfs/module/ld/db/phase5/next-release.xml
-+++ b/kfs-ld/src/main/resources/org/kuali/kfs/module/ld/db/phase5/next-release.xml
-@@ -19,4 +19,4 @@
-     along with this program.  If not, see <http://www.gnu.org/licenses/>.
- 
- -->
--<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/kfs/module/ld/db/phase5/post-rel-2017-11-02.xml"/>
-+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/kfs/module/ld/db/phase5/post-rel-2017-11-30.xml"/>
-```
----
-*File #14*
-
-**kfs-purap/src/main/resources/org/kuali/kfs/module/purap/db/phase5/next-release.xml**
-
-```diff
-diff --git a/kfs-purap/src/main/resources/org/kuali/kfs/module/purap/db/phase5/next-release.xml b/kfs-purap/src/main/resources/org/kuali/kfs/module/purap/db/phase5/next-release.xml
-index cd6b5be55b..64e8b316ff 100644
---- a/kfs-purap/src/main/resources/org/kuali/kfs/module/purap/db/phase5/next-release.xml
-+++ b/kfs-purap/src/main/resources/org/kuali/kfs/module/purap/db/phase5/next-release.xml
-@@ -19,4 +19,4 @@
-     along with this program.  If not, see <http://www.gnu.org/licenses/>.
- 
- -->
--<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/kfs/module/purap/db/phase5/post-rel-2017-11-02.xml"/>
-+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd" logicalFilePath="org/kuali/kfs/module/purap/db/phase5/post-rel-2017-11-30.xml"/>
-```
----
-*File #15*
-
 **kfs-cam/src/main/resources/org/kuali/kfs/module/cam/businessobject/datadictionary/Asset.xml**
 
 ```diff
@@ -447,7 +297,7 @@ index 69e384ce5d..7defb809e7 100644
                              <bean parent="FieldDefinition" p:attributeName="capitalAssetNumber"/>
 ```
 ---
-*File #16*
+*File #7*
 
 **kfs-core/src/main/resources/org/kuali/kfs/sys/businessobject/datadictionary/ElectronicPaymentClaim.xml**
 
@@ -469,7 +319,7 @@ index b61ecb7f02..6f1ee78c08 100644
          <property name="resultFields">
 ```
 ---
-*File #17*
+*File #8*
 
 **kfs-core/src/main/resources/org/kuali/kfs/sys/spring-sys.xml**
 
@@ -492,7 +342,7 @@ index 9872ef27a4..9d92d64405 100644
  </beans>
 ```
 ---
-*File #18*
+*File #9*
 
 **kfs-web/src/main/webapp/jsp/gl/AccountBalanceByConsolidationLookup.jsp**
 
