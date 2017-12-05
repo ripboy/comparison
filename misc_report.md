@@ -421,30 +421,6 @@ index 0cb0a19b85..8286cbd461 100644
  Author: Philip Berg <pcberg@iu.edu>
 ```
 ---
-*File #20*
-
-**kfs-ar/pom.xml**
-
-```diff
-diff --git a/kfs-ar/pom.xml b/kfs-ar/pom.xml
-index b078be6064..23c86da90a 100644
---- a/kfs-ar/pom.xml
-+++ b/kfs-ar/pom.xml
-@@ -25,7 +25,7 @@
-     <parent>
-         <artifactId>kfs</artifactId>
-         <groupId>org.kuali.kfs</groupId>
--        <version>2017-11-02</version>
-+        <version>2017-11-30</version>
-     </parent>
-     <modelVersion>4.0.0</modelVersion>
- 
-```
----
-*File #21*
-
-**kfs-ar/src/test/java/org/kuali/kfs/module/ar/BillingFrequencyEnumTest.java**
-
 ```diff
 diff --git a/kfs-ar/src/test/java/org/kuali/kfs/module/ar/BillingFrequencyEnumTest.java b/kfs-ar/src/test/java/org/kuali/kfs/module/ar/BillingFrequencyEnumTest.java
 index 367bae06a8..98354f780d 100644
@@ -741,7 +717,7 @@ index 367bae06a8..98354f780d 100644
  }
 ```
 ---
-*File #22*
+*File #21*
 
 **kfs-ar/src/test/java/org/kuali/kfs/module/ar/document/service/ContractsGrantsBillingAwardVerificationServiceTest.java**
 
@@ -865,7 +841,7 @@ index d1d21270f2..39cfd73dfe 100644
  
 ```
 ---
-*File #23*
+*File #22*
 
 **kfs-ar/src/test/java/org/kuali/kfs/module/ar/service/impl/ContractsGrantsInvoiceCreateDocumentService/PerformValidationTest.java**
 
@@ -1548,7 +1524,7 @@ index 56a9d7157b..dd0946a632 100644
 \ No newline at end of file
 ```
 ---
-*File #24*
+*File #23*
 
 **kfs-ar/src/test/java/org/kuali/kfs/module/ar/service/impl/ContractsGrantsInvoiceCreateDocumentService/ValidateAwardsTest.java**
 
@@ -2012,30 +1988,6 @@ index 5ba784e7d6..dea03a1e6e 100644
      private boolean errorLogContainsAward(
 ```
 ---
-*File #25*
-
-**kfs-cam/pom.xml**
-
-```diff
-diff --git a/kfs-cam/pom.xml b/kfs-cam/pom.xml
-index 9e1613e6cc..778a05999c 100644
---- a/kfs-cam/pom.xml
-+++ b/kfs-cam/pom.xml
-@@ -25,7 +25,7 @@
-     <parent>
-         <artifactId>kfs</artifactId>
-         <groupId>org.kuali.kfs</groupId>
--        <version>2017-11-02</version>
-+        <version>2017-11-30</version>
-     </parent>
-     <modelVersion>4.0.0</modelVersion>
- 
-```
----
-*File #26*
-
-**kfs-cam/src/test/java/org/kuali/kfs/module/cam/batch/ResetAssetDepreciationForFiscalYearStepTest.java**
-
 ```diff
 diff --git a/kfs-cam/src/test/java/org/kuali/kfs/module/cam/batch/ResetAssetDepreciationForFiscalYearStepTest.java b/kfs-cam/src/test/java/org/kuali/kfs/module/cam/batch/ResetAssetDepreciationForFiscalYearStepTest.java
 index efb905e608..8b729508f7 100644
@@ -2110,7 +2062,7 @@ index efb905e608..8b729508f7 100644
      }
 ```
 ---
-*File #27*
+*File #25*
 
 **kfs-cam/src/test/java/org/kuali/kfs/module/cam/batch/service/impl/AssetBarcodeInventoryLoadServiceImplTest.java**
 
@@ -2224,7 +2176,7 @@ index 66a851d4ef..1f9f9f125b 100644
      private List<Asset> getAssets() {
 ```
 ---
-*File #28*
+*File #26*
 
 **kfs-cam/src/test/java/org/kuali/kfs/module/cam/batch/service/impl/AssetDepreciationServiceImplTest.java**
 
@@ -2292,50 +2244,6 @@ index 09bb3468e7..e73c4f6d5e 100644
  }
 ```
 ---
-*File #29*
-
-**kfs-cg/pom.xml**
-
-```diff
-diff --git a/kfs-cg/pom.xml b/kfs-cg/pom.xml
-index 0f86fb8b30..83a3f5a9b5 100644
---- a/kfs-cg/pom.xml
-+++ b/kfs-cg/pom.xml
-@@ -25,7 +25,7 @@
-     <parent>
-         <artifactId>kfs</artifactId>
-         <groupId>org.kuali.kfs</groupId>
--        <version>2017-11-02</version>
-+        <version>2017-11-30</version>
-     </parent>
-     <modelVersion>4.0.0</modelVersion>
- 
-```
----
-*File #30*
-
-**kfs-core/pom.xml**
-
-```diff
-diff --git a/kfs-core/pom.xml b/kfs-core/pom.xml
-index 428321eca4..c732ce313d 100644
---- a/kfs-core/pom.xml
-+++ b/kfs-core/pom.xml
-@@ -25,7 +25,7 @@
-     <parent>
-         <artifactId>kfs</artifactId>
-         <groupId>org.kuali.kfs</groupId>
--        <version>2017-11-02</version>
-+        <version>2017-11-30</version>
-     </parent>
-     <modelVersion>4.0.0</modelVersion>
- 
-```
----
-*File #31*
-
-**kfs-core/src/main/config/kfs-skel-config.properties**
-
 ```diff
 diff --git a/kfs-core/src/main/config/kfs-skel-config.properties b/kfs-core/src/main/config/kfs-skel-config.properties
 index 935880976f..248cfdce31 100644
@@ -2351,7 +2259,7 @@ index 935880976f..248cfdce31 100644
  log4j.settings.file=
 ```
 ---
-*File #32*
+*File #28*
 
 **kfs-core/src/main/java/org/kuali/kfs/sys/businessobject/dto/AttributeDTO.java**
 
@@ -2478,7 +2386,7 @@ index 0000000000..e30c4d0401
 +}
 ```
 ---
-*File #33*
+*File #29*
 
 **kfs-core/src/main/java/org/kuali/kfs/sys/businessobject/dto/BeanParentDTO.java**
 
@@ -2540,7 +2448,7 @@ index 0000000000..a010b88eb4
 +}
 ```
 ---
-*File #34*
+*File #30*
 
 **kfs-core/src/main/java/org/kuali/kfs/sys/businessobject/dto/BusinessObjectEntryDTO.java**
 
@@ -2641,7 +2549,7 @@ index 0000000000..5b531fea07
 +}
 ```
 ---
-*File #35*
+*File #31*
 
 **kfs-core/src/main/java/org/kuali/kfs/sys/businessobject/dto/CollectionDTO.java**
 
@@ -2712,7 +2620,7 @@ index 0000000000..9a39d58894
 +}
 ```
 ---
-*File #36*
+*File #32*
 
 **kfs-core/src/main/java/org/kuali/kfs/sys/businessobject/dto/CurrencyAttributeDTO.java**
 
@@ -2774,7 +2682,7 @@ index 0000000000..7af38d5f0d
 +}
 ```
 ---
-*File #37*
+*File #33*
 
 **kfs-core/src/main/java/org/kuali/kfs/sys/businessobject/dto/DocumentEntryDTO.java**
 
@@ -2929,7 +2837,7 @@ index 0000000000..9ff44698de
 +}
 ```
 ---
-*File #38*
+*File #34*
 
 **kfs-core/src/main/java/org/kuali/kfs/sys/businessobject/dto/MaintainableCollectionDTO.java**
 
@@ -2985,7 +2893,7 @@ index 0000000000..341450fd7c
 +}
 ```
 ---
-*File #39*
+*File #35*
 
 **kfs-core/src/main/java/org/kuali/kfs/sys/businessobject/dto/OJBFieldDTO.java**
 
@@ -3047,7 +2955,7 @@ index 0000000000..5bd9af664e
 +}
 ```
 ---
-*File #40*
+*File #36*
 
 **kfs-core/src/main/java/org/kuali/kfs/sys/businessobject/dto/OJBTableDTO.java**
 
@@ -3111,7 +3019,7 @@ index 0000000000..e70212c377
 +}
 ```
 ---
-*File #41*
+*File #37*
 
 **kfs-core/src/main/java/org/kuali/kfs/sys/businessobject/dto/RelationshipDTO.java**
 
@@ -3196,7 +3104,7 @@ index 0000000000..373b8e85f7
 +}
 ```
 ---
-*File #42*
+*File #38*
 
 **kfs-core/src/main/java/org/kuali/kfs/sys/context/SpringContext.java**
 
@@ -3290,7 +3198,7 @@ index 40b1017232..d515fbbf40 100644
              try {
 ```
 ---
-*File #43*
+*File #39*
 
 **kfs-core/src/main/java/org/kuali/kfs/sys/rest/application/SysApiApplication.java**
 
@@ -3320,7 +3228,7 @@ index 4853ae07c8..964449a6f0 100644
              singletons.add(new FinancialDocumentTypeResource());
 ```
 ---
-*File #44*
+*File #40*
 
 **kfs-core/src/main/java/org/kuali/kfs/sys/rest/resource/DataDictionaryResource.java**
 
@@ -3425,7 +3333,7 @@ index 0000000000..581b0090d8
 +
 ```
 ---
-*File #45*
+*File #41*
 
 **kfs-core/src/main/java/org/kuali/kfs/sys/rest/resource/OJBConfigurationResource.java**
 
@@ -3497,7 +3405,7 @@ index 0000000000..c095394a58
 +
 ```
 ---
-*File #46*
+*File #42*
 
 **kfs-core/src/main/java/org/kuali/kfs/sys/service/DataDictionaryMigrationService.java**
 
@@ -3531,7 +3439,7 @@ index 6301904c40..10335e49fd 100644
  }
 ```
 ---
-*File #47*
+*File #43*
 
 **kfs-core/src/main/java/org/kuali/kfs/sys/service/impl/DataDictionaryMigrationServiceImpl.java**
 
@@ -3873,7 +3781,7 @@ index 1aa42f724d..c0bd4db069 100644
  }
 ```
 ---
-*File #48*
+*File #44*
 
 **kfs-core/src/main/java/org/kuali/kfs/sys/service/impl/OjbConfigurationServiceImpl.java**
 
@@ -4038,7 +3946,7 @@ index 0000000000..fc88ca586b
 +}
 ```
 ---
-*File #49*
+*File #45*
 
 **kfs-core/src/main/java/org/kuali/kfs/sys/service/OjbConfigurationService.java**
 
@@ -4080,7 +3988,7 @@ index 0000000000..27fc426566
 +}
 ```
 ---
-*File #50*
+*File #46*
 
 **kfs-core/src/main/java/org/kuali/kfs/sys/web/filter/AuthenticationTokenFilter.java**
 
@@ -4150,7 +4058,7 @@ index bef39842b9..a93e422c78 100644
                  filterChain.doFilter(request, response);
 ```
 ---
-*File #51*
+*File #47*
 
 **kfs-core/src/main/java/org/kuali/kfs/sys/web/struts/ConfigViewerAction.java**
 
@@ -4216,7 +4124,7 @@ index 0000000000..7ce5c53a6a
 +}
 ```
 ---
-*File #52*
+*File #48*
 
 **kfs-core/src/main/resources/kfs-default-config.properties**
 
@@ -4249,7 +4157,7 @@ index 1e2abbed33..eb14902c6b 100644
 +web.analytics.tag=
 ```
 ---
-*File #53*
+*File #49*
 
 **kfs-core/src/test/java/org/kuali/kfs/coa/document/validation/impl/IndirectCostRecoveryAccountsRuleTest.java**
 
@@ -4583,7 +4491,7 @@ index 7f3dfe0678..9ebb1e7e12 100644
  }
 ```
 ---
-*File #54*
+*File #50*
 
 **kfs-core/src/test/java/org/kuali/kfs/fp/document/authorization/DisbursementVoucherDocumentPresentationControllerTest.java**
 
@@ -5432,7 +5340,7 @@ index 60bf5b409e..ced0f63eb2 100644
  }
 ```
 ---
-*File #55*
+*File #51*
 
 **kfs-core/src/test/java/org/kuali/kfs/fp/document/DisbursementVoucherDocumentTest.java**
 
@@ -5518,7 +5426,7 @@ index 7326cffcd9..ecc08ab822 100644
          setupPayeeDetail("0", "12345");
 ```
 ---
-*File #56*
+*File #52*
 
 **kfs-core/src/test/java/org/kuali/kfs/fp/document/validation/impl/DisbursementVoucherDocumentNonResidentAlienInformationRuleTest.java**
 
@@ -6473,7 +6381,7 @@ index 1ac3c550c6..94e7ba36c8 100644
  
 ```
 ---
-*File #57*
+*File #53*
 
 **kfs-core/src/test/java/org/kuali/kfs/gl/batch/service/impl/CollectorHelperServiceImplTest.java**
 
@@ -6817,7 +6725,7 @@ index dec0e31f6e..a1b86b3546 100644
 \ No newline at end of file
 ```
 ---
-*File #58*
+*File #54*
 
 **kfs-core/src/test/java/org/kuali/kfs/gl/batch/service/impl/DetectDocumentsMissingEntriesServiceImplDiscoverTest.java**
 
@@ -7014,7 +6922,7 @@ index cf8e682dee..72290532ba 100644
  }
 ```
 ---
-*File #59*
+*File #55*
 
 **kfs-core/src/test/java/org/kuali/kfs/gl/rest/resource/CollectorResourceTest.java**
 
@@ -7182,7 +7090,7 @@ index d43332ed3d..3fd9849512 100644
      private Map<String,String> getDetails(String beanName) {
 ```
 ---
-*File #60*
+*File #56*
 
 **kfs-core/src/test/java/org/kuali/kfs/gl/rest/resource/GeneralLedgerConfigurationResourceTest.java**
 
@@ -7578,7 +7486,7 @@ index 996e625550..524e88e7da 100644
  }
 ```
 ---
-*File #61*
+*File #57*
 
 **kfs-core/src/test/java/org/kuali/kfs/gl/service/impl/sf/CheckSufficientFundsTest.java**
 
@@ -8078,7 +7986,7 @@ index c964feab1e..0000000000
 -}
 ```
 ---
-*File #62*
+*File #58*
 
 **kfs-core/src/test/java/org/kuali/kfs/gl/service/impl/sf/PurgeYearByChartTest.java**
 
@@ -8132,7 +8040,7 @@ index e709201985..c2518e3775 100644
  }
 ```
 ---
-*File #63*
+*File #59*
 
 **kfs-core/src/test/java/org/kuali/kfs/gl/service/impl/sf/SufficientFundsServiceImplTest.java**
 
@@ -8809,7 +8717,7 @@ index 0000000000..83167ec599
 +}
 ```
 ---
-*File #64*
+*File #60*
 
 **kfs-core/src/test/java/org/kuali/kfs/pdp/batch/service/impl/AutoCheckFormatServiceImplTest.java**
 
@@ -9019,7 +8927,7 @@ index e68b80abbd..fac6eb2648 100644
  }
 ```
 ---
-*File #65*
+*File #61*
 
 **kfs-core/src/test/java/org/kuali/kfs/pdp/service/impl/FormatServiceImplTest.java**
 
@@ -9150,7 +9058,7 @@ index 63c4dbb15c..103e7bcb63 100644
          custPro.setUnitCode("KUAL");
 ```
 ---
-*File #66*
+*File #62*
 
 **kfs-core/src/test/java/org/kuali/kfs/sys/dataaccess/impl/PreferencesDaoJdbcTest.java**
 
@@ -9301,7 +9209,7 @@ index ef96e5572e..630d2d6b36 100644
      @Test
 ```
 ---
-*File #67*
+*File #63*
 
 **kfs-core/src/test/java/org/kuali/kfs/sys/document/web/AccountingLineGroupTagTest.java**
 
@@ -9520,7 +9428,7 @@ index 3724be3cfc..b7a4fadac0 100644
  
 ```
 ---
-*File #68*
+*File #64*
 
 **kfs-core/src/test/java/org/kuali/kfs/sys/document/web/renderers/AccountingLineTableHeaderRendererTest.java**
 
@@ -9695,7 +9603,7 @@ index da882b4303..57bce5ef0f 100644
  
 ```
 ---
-*File #69*
+*File #65*
 
 **kfs-core/src/test/java/org/kuali/kfs/sys/rest/helper/CollectionSerializationHelperTest.java**
 
@@ -9786,7 +9694,7 @@ index 5beffe9f41..ea472aaa22 100644
          assertFalse(result.containsKey(SerializationService.COLLECTIONS_KEY));
 ```
 ---
-*File #70*
+*File #66*
 
 **kfs-core/src/test/java/org/kuali/kfs/sys/service/impl/CoreApiKeyAuthenticationServiceImplTest.java**
 
@@ -9976,7 +9884,7 @@ index 3d6c882e4f..75dafb67ad 100644
          }
 ```
 ---
-*File #71*
+*File #67*
 
 **kfs-core/src/test/java/org/kuali/kfs/sys/service/impl/DataDictionaryMigrationServiceImplTest.java**
 
@@ -12033,7 +11941,7 @@ index ce09408833..0cef8f832d 100644
  }
 ```
 ---
-*File #72*
+*File #68*
 
 **kfs-core/src/test/java/org/kuali/kfs/sys/service/impl/EmailServiceImplTest.java**
 
@@ -12396,7 +12304,7 @@ index bf34b9f218..f806b271ad 100644
      private MailMessage getTestAttachmentMessage() {
 ```
 ---
-*File #73*
+*File #69*
 
 **kfs-core/src/test/java/org/kuali/kfs/sys/service/impl/InstitutionPreferencesServiceImplTest.java**
 
@@ -13873,7 +13781,7 @@ index 4151359989..837c425fc7 100644
      class NoPermissionsInstitutionPreferencesServiceImpl extends InstitutionPreferencesServiceImpl {
 ```
 ---
-*File #74*
+*File #70*
 
 **kfs-core/src/test/java/org/kuali/kfs/sys/service/impl/JwtServiceImplTest.java**
 
@@ -14003,7 +13911,7 @@ index 80e59e03cb..728855e4e4 100644
      private Key decodeKey(String key) {
 ```
 ---
-*File #75*
+*File #71*
 
 **kfs-core/src/test/java/org/kuali/kfs/sys/service/impl/OjbConfigurationServiceImplTest.java**
 
@@ -14236,7 +14144,7 @@ index 0000000000..7ae4a70b59
 \ No newline at end of file
 ```
 ---
-*File #76*
+*File #72*
 
 **kfs-core/src/test/java/org/kuali/kfs/sys/web/filter/AuthenticationTokenFilterTest.java**
 
@@ -14652,70 +14560,6 @@ index f281d2d1a5..047d3fc136 100644
  }
 ```
 ---
-*File #77*
-
-**kfs-datatools/pom.xml**
-
-```diff
-diff --git a/kfs-datatools/pom.xml b/kfs-datatools/pom.xml
-index 4e49d769cf..4b0b8a6e51 100644
---- a/kfs-datatools/pom.xml
-+++ b/kfs-datatools/pom.xml
-@@ -24,7 +24,7 @@
-     <parent>
-         <artifactId>kfs</artifactId>
-         <groupId>org.kuali.kfs</groupId>
--        <version>2017-11-02</version>
-+        <version>2017-11-30</version>
-     </parent>
-     <modelVersion>4.0.0</modelVersion>
- 
-```
----
-*File #78*
-
-**kfs-ec/pom.xml**
-
-```diff
-diff --git a/kfs-ec/pom.xml b/kfs-ec/pom.xml
-index 59744ac27f..0dc997685c 100644
---- a/kfs-ec/pom.xml
-+++ b/kfs-ec/pom.xml
-@@ -25,7 +25,7 @@
-     <parent>
-         <artifactId>kfs</artifactId>
-         <groupId>org.kuali.kfs</groupId>
--        <version>2017-11-02</version>
-+        <version>2017-11-30</version>
-     </parent>
-     <modelVersion>4.0.0</modelVersion>
- 
-```
----
-*File #79*
-
-**kfs-kc/pom.xml**
-
-```diff
-diff --git a/kfs-kc/pom.xml b/kfs-kc/pom.xml
-index 905adbe1de..2fd780e4a3 100644
---- a/kfs-kc/pom.xml
-+++ b/kfs-kc/pom.xml
-@@ -25,7 +25,7 @@
-     <parent>
-         <artifactId>kfs</artifactId>
-         <groupId>org.kuali.kfs</groupId>
--        <version>2017-11-02</version>
-+        <version>2017-11-30</version>
-     </parent>
-     <modelVersion>4.0.0</modelVersion>
- 
-```
----
-*File #80*
-
-**kfs-kc/src/test/java/org/kuali/kfs/module/external/kc/businessobject/AgencyAddressTest.java**
-
 ```diff
 diff --git a/kfs-kc/src/test/java/org/kuali/kfs/module/external/kc/businessobject/AgencyAddressTest.java b/kfs-kc/src/test/java/org/kuali/kfs/module/external/kc/businessobject/AgencyAddressTest.java
 index 20db15a83e..0de4184bf8 100644
@@ -14804,7 +14648,7 @@ index 20db15a83e..0de4184bf8 100644
      private Country getDefaultCountry() {
 ```
 ---
-*File #81*
+*File #74*
 
 **kfs-kc/src/test/java/org/kuali/kfs/module/external/kc/service/impl/BillingFrequencyServiceImplTest.java**
 
@@ -14946,7 +14790,7 @@ index 52c23eeab8..1b6af3150d 100644
      private List<AccountsReceivableBillingFrequency> getSampleBillingFrequencyList() {
 ```
 ---
-*File #82*
+*File #75*
 
 **kfs-kc/src/test/java/org/kuali/kfs/module/external/kc/service/impl/SponsorServiceImplTest.java**
 
@@ -15047,30 +14891,6 @@ index bd662d9de9..3b93c68bcc 100644
  }
 ```
 ---
-*File #83*
-
-**kfs-kns/pom.xml**
-
-```diff
-diff --git a/kfs-kns/pom.xml b/kfs-kns/pom.xml
-index 20df5bdd97..c802ff749a 100644
---- a/kfs-kns/pom.xml
-+++ b/kfs-kns/pom.xml
-@@ -24,7 +24,7 @@
-     <parent>
-         <artifactId>kfs</artifactId>
-         <groupId>org.kuali.kfs</groupId>
--        <version>2017-11-02</version>
-+        <version>2017-11-30</version>
-     </parent>
-     <modelVersion>4.0.0</modelVersion>
- 
-```
----
-*File #84*
-
-**kfs-kns/src/main/java/org/kuali/kfs/kns/util/WebUtils.java**
-
 ```diff
 diff --git a/kfs-kns/src/main/java/org/kuali/kfs/kns/util/WebUtils.java b/kfs-kns/src/main/java/org/kuali/kfs/kns/util/WebUtils.java
 index e64d2fc81c..4ca15c8e18 100644
@@ -15095,7 +14915,7 @@ index e64d2fc81c..4ca15c8e18 100644
              LOG.debug("Failed to decode backLocation: " + backLocation, de);
 ```
 ---
-*File #85*
+*File #77*
 
 **kfs-kns/src/main/java/org/kuali/kfs/kns/web/struts/form/LookupForm.java**
 
@@ -15123,7 +14943,7 @@ index baec6c9522..53104d2319 100644
      /**
 ```
 ---
-*File #86*
+*File #78*
 
 **kfs-kns/src/main/java/org/kuali/kfs/kns/web/ui/Field.java**
 
@@ -15145,7 +14965,7 @@ index d2730a22f3..586a31548f 100644
      }
 ```
 ---
-*File #87*
+*File #79*
 
 **kfs-kns/src/main/java/org/kuali/kfs/krad/datadictionary/DataDictionary.java**
 
@@ -15170,7 +14990,7 @@ index d8f0dfc455..434a65f5fa 100644
  }
 ```
 ---
-*File #88*
+*File #80*
 
 **kfs-kns/src/main/java/org/kuali/kfs/krad/datadictionary/DataDictionaryIndex.java**
 
@@ -15213,7 +15033,7 @@ index ae05403225..06fa5b7f9d 100644
  }
 ```
 ---
-*File #89*
+*File #81*
 
 **kfs-kns/src/test/java/org/kuali/kfs/krad/service/impl/MaintainableXMLConversionServiceTest.java**
 
@@ -15503,50 +15323,6 @@ index da4d922cc2..4885bd97b0 100644
      class MockMaintainableXMLConversionServiceImpl extends MaintainableXMLConversionServiceImpl {
 ```
 ---
-*File #90*
-
-**kfs-ld/pom.xml**
-
-```diff
-diff --git a/kfs-ld/pom.xml b/kfs-ld/pom.xml
-index d302887530..66bd5262a1 100644
---- a/kfs-ld/pom.xml
-+++ b/kfs-ld/pom.xml
-@@ -25,7 +25,7 @@
-     <parent>
-         <artifactId>kfs</artifactId>
-         <groupId>org.kuali.kfs</groupId>
--        <version>2017-11-02</version>
-+        <version>2017-11-30</version>
-     </parent>
-     <modelVersion>4.0.0</modelVersion>
- 
-```
----
-*File #91*
-
-**kfs-purap/pom.xml**
-
-```diff
-diff --git a/kfs-purap/pom.xml b/kfs-purap/pom.xml
-index a1ba863c7a..a63d503d8d 100644
---- a/kfs-purap/pom.xml
-+++ b/kfs-purap/pom.xml
-@@ -25,7 +25,7 @@
-     <parent>
-         <artifactId>kfs</artifactId>
-         <groupId>org.kuali.kfs</groupId>
--        <version>2017-11-02</version>
-+        <version>2017-11-30</version>
-     </parent>
-     <modelVersion>4.0.0</modelVersion>
- 
-```
----
-*File #92*
-
-**kfs-purap/src/test/java/org/kuali/kfs/module/purap/document/authorization/PaymentRequestDocumentPresentationControllerTest.java**
-
 ```diff
 diff --git a/kfs-purap/src/test/java/org/kuali/kfs/module/purap/document/authorization/PaymentRequestDocumentPresentationControllerTest.java b/kfs-purap/src/test/java/org/kuali/kfs/module/purap/document/authorization/PaymentRequestDocumentPresentationControllerTest.java
 index 713f5d2724..a5f6f51fde 100644
@@ -16435,7 +16211,7 @@ index 713f5d2724..a5f6f51fde 100644
  }
 ```
 ---
-*File #93*
+*File #83*
 
 **kfs-purap/src/test/java/org/kuali/kfs/module/purap/document/validation/impl/PaymentRequestProcessItemValidationTest.java**
 
@@ -16513,7 +16289,7 @@ index 8a35fa67af..18ddc6522e 100644
  }
 ```
 ---
-*File #94*
+*File #84*
 
 **kfs-purap/src/test/java/org/kuali/kfs/module/purap/service/impl/purapgeneralledgerserviceimpl/CustomizeGeneralLedgerPendingEntryTest.java**
 
@@ -17227,7 +17003,7 @@ index 87972f8ce9..156c024171 100644
      private GeneralLedgerPendingEntry getGeneralLedgerPendingEntry() {
 ```
 ---
-*File #95*
+*File #85*
 
 **kfs-purap/src/test/java/org/kuali/kfs/module/purap/service/impl/purapgeneralledgerserviceimpl/GenerateEntriesApproveAmendPurchaseOrderTest.java**
 
@@ -17538,7 +17314,7 @@ index b001cd5aa9..4ede550143 100644
  }
 ```
 ---
-*File #96*
+*File #86*
 
 **kfs-purap/src/test/java/org/kuali/kfs/module/purap/service/impl/purapgeneralledgerserviceimpl/GenerateEntriesCancelCreditMemoTest.java**
 
@@ -17970,7 +17746,7 @@ index eb48755df7..8111a02828 100644
  }
 ```
 ---
-*File #97*
+*File #87*
 
 **kfs-purap/src/test/java/org/kuali/kfs/module/purap/service/impl/purapgeneralledgerserviceimpl/GenerateEntriesCreateCreditMemoTest.java**
 
@@ -18427,7 +18203,7 @@ index 6c50483976..355fd2ee7b 100644
  }
 ```
 ---
-*File #98*
+*File #88*
 
 **kfs-purap/src/test/java/org/kuali/kfs/module/purap/service/impl/purapgeneralledgerserviceimpl/GenerateEntriesReopenPurchaseOrderTest.java**
 
@@ -18700,7 +18476,7 @@ index 9ed48a0e64..75249bc955 100644
      }
 ```
 ---
-*File #99*
+*File #89*
 
 **kfs-purap/src/test/java/org/kuali/kfs/module/purap/service/impl/purapgeneralledgerserviceimpl/GenerateEntriesVoidPurchaseOrderTest.java**
 
@@ -18920,30 +18696,6 @@ index 811b2842af..adcd3a2650 100644
          execute();
 ```
 ---
-*File #100*
-
-**kfs-web/pom.xml**
-
-```diff
-diff --git a/kfs-web/pom.xml b/kfs-web/pom.xml
-index 09008e4524..8ac3ad2575 100644
---- a/kfs-web/pom.xml
-+++ b/kfs-web/pom.xml
-@@ -25,7 +25,7 @@
-     <parent>
-         <artifactId>kfs</artifactId>
-         <groupId>org.kuali.kfs</groupId>
--        <version>2017-11-02</version>
-+        <version>2017-11-30</version>
-     </parent>
-     <modelVersion>4.0.0</modelVersion>
- 
-```
----
-*File #101*
-
-**kfs-web/src/main/webapp/jsp/gl/BalanceInquiry.jsp**
-
 ```diff
 diff --git a/kfs-web/src/main/webapp/jsp/gl/BalanceInquiry.jsp b/kfs-web/src/main/webapp/jsp/gl/BalanceInquiry.jsp
 index 0eec8541bc..845bd57ea3 100644
@@ -18969,7 +18721,7 @@ index 0eec8541bc..845bd57ea3 100644
  
 ```
 ---
-*File #102*
+*File #91*
 
 **kfs-web/src/main/webapp/jsp/gl/ModifiedInquiry.jsp**
 
@@ -19016,7 +18768,7 @@ index 50746e2d88..d76ff1c05e 100644
  
 ```
 ---
-*File #103*
+*File #92*
 
 **kfs-web/src/main/webapp/jsp/gl/TrialBalanceReportLookup.jsp**
 
@@ -19054,7 +18806,7 @@ index 43bb8b2ad3..91dcf0b543 100644
  
 ```
 ---
-*File #104*
+*File #93*
 
 **kfs-web/src/main/webapp/jsp/sys/ConfigViewer.jsp**
 
@@ -19210,237 +18962,7 @@ index 0000000000..e773c36bb4
 +</html-el:html>
 ```
 ---
-*File #105*
-
-**kfs-web/src/main/webapp/package-lock.json**
-
-```diff
-diff --git a/kfs-web/src/main/webapp/package-lock.json b/kfs-web/src/main/webapp/package-lock.json
-index 07ae90f17a..bbf5fbfd32 100644
---- a/kfs-web/src/main/webapp/package-lock.json
-+++ b/kfs-web/src/main/webapp/package-lock.json
-@@ -15,7 +15,7 @@
-       "integrity": "sha1-9uIs64GiWMwRXhF0cjGR/uBPVe4=",
-       "requires": {
-         "colors": "1.1.2",
--        "commander": "2.11.0",
-+        "commander": "2.12.2",
-         "html-entities": "1.2.1",
-         "jsontoxml": "0.0.11",
-         "mkdirp": "0.5.1",
-@@ -26,6 +26,11 @@
-         "xmldom": "0.1.27"
-       },
-       "dependencies": {
-+        "commander": {
-+          "version": "2.12.2",
-+          "resolved": "https://registry.npmjs.org/commander/-/commander-2.12.2.tgz",
-+          "integrity": "sha512-BFnaq5ZOGcDN7FlrtBT4xxkgIToalIIxwjxLWVJ8bGTpe1LroqMiqQXdA7ygc7CRvaYS+9zfPGFnJqFSayx+AA=="
-+        },
-         "minimist": {
-           "version": "0.0.8",
-           "resolved": "https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz",
-@@ -56,7 +61,7 @@
-         "babel-traverse": "6.26.0",
-         "babel-types": "6.26.0",
-         "babylon": "6.18.0",
--        "convert-source-map": "1.5.0",
-+        "convert-source-map": "1.5.1",
-         "debug": "2.6.9",
-         "json5": "0.5.1",
-         "lodash": "4.17.4",
-@@ -218,9 +223,9 @@
-           "integrity": "sha1-2Klr13/Wjfd5OnMDajug1UBdR3s="
-         },
-         "convert-source-map": {
--          "version": "1.5.0",
--          "resolved": "https://registry.npmjs.org/convert-source-map/-/convert-source-map-1.5.0.tgz",
--          "integrity": "sha1-ms1whRxtXf3ZPZKC5e35SgP/RrU="
-+          "version": "1.5.1",
-+          "resolved": "https://registry.npmjs.org/convert-source-map/-/convert-source-map-1.5.1.tgz",
-+          "integrity": "sha1-uCeAl7m8IpNl3lxiz1/K7YtVmeU="
-         },
-         "core-js": {
-           "version": "2.5.1",
-@@ -1580,11 +1585,6 @@
-       "resolved": "https://registry.npmjs.org/colors/-/colors-1.1.2.tgz",
-       "integrity": "sha1-FopHAXVran9RoSzgyXv6KMCE7WM="
-     },
--    "commander": {
--      "version": "2.11.0",
--      "resolved": "https://registry.npmjs.org/commander/-/commander-2.11.0.tgz",
--      "integrity": "sha512-b0553uYA5YAEGgyYIGYROzKQ7X5RAqedkfjiZxwi0kL1g3bOaBNNZfYkzt/CL0umgD5wc9Jec2FbB98CjkMRvQ=="
--    },
-     "cycle": {
-       "version": "1.0.3",
-       "resolved": "https://registry.npmjs.org/cycle/-/cycle-1.0.3.tgz",
-@@ -3799,9 +3799,9 @@
-       },
-       "dependencies": {
-         "acorn": {
--          "version": "4.0.13",
--          "resolved": "https://registry.npmjs.org/acorn/-/acorn-4.0.13.tgz",
--          "integrity": "sha1-EFSVrlNh1pe9GVyCUZLhrX8lN4c="
-+          "version": "5.2.1",
-+          "resolved": "https://registry.npmjs.org/acorn/-/acorn-5.2.1.tgz",
-+          "integrity": "sha512-jG0u7c4Ly+3QkkW18V+NRDN+4bWHdln30NL1ZL2AvFZZmQe/BfopYCtghCKKVBUSetZ4QKcyA0pY6/4Gw8Pv8w=="
-         },
-         "amdefine": {
-           "version": "1.0.1",
-@@ -3824,9 +3824,9 @@
-           "integrity": "sha1-ibTRmasr7kneFk6gK4nORi1xt2c="
-         },
-         "base62": {
--          "version": "1.2.0",
--          "resolved": "https://registry.npmjs.org/base62/-/base62-1.2.0.tgz",
--          "integrity": "sha1-MeflYNyEbJ9EwaUx32UU2jVHQVc="
-+          "version": "1.2.1",
-+          "resolved": "https://registry.npmjs.org/base62/-/base62-1.2.1.tgz",
-+          "integrity": "sha512-xVtfFHNPUzpCNHygpXFGMlDk3saxXLQcOOQzAAk6ibvlAHgT6WKXLv9rMFhcyEK1n9LuDmp/LxyGW/Fm9L8++g=="
-         },
-         "brace-expansion": {
-           "version": "1.1.8",
-@@ -3838,17 +3838,17 @@
-           }
-         },
-         "commander": {
--          "version": "2.11.0",
--          "resolved": "https://registry.npmjs.org/commander/-/commander-2.11.0.tgz",
--          "integrity": "sha512-b0553uYA5YAEGgyYIGYROzKQ7X5RAqedkfjiZxwi0kL1g3bOaBNNZfYkzt/CL0umgD5wc9Jec2FbB98CjkMRvQ=="
-+          "version": "2.12.2",
-+          "resolved": "https://registry.npmjs.org/commander/-/commander-2.12.2.tgz",
-+          "integrity": "sha512-BFnaq5ZOGcDN7FlrtBT4xxkgIToalIIxwjxLWVJ8bGTpe1LroqMiqQXdA7ygc7CRvaYS+9zfPGFnJqFSayx+AA=="
-         },
-         "commoner": {
-           "version": "0.10.8",
-           "resolved": "https://registry.npmjs.org/commoner/-/commoner-0.10.8.tgz",
-           "integrity": "sha1-NPw2cs0kOT6LtH5wyqApOBH08sU=",
-           "requires": {
--            "commander": "2.11.0",
--            "detective": "4.5.0",
-+            "commander": "2.12.2",
-+            "detective": "4.6.0",
-             "glob": "5.0.15",
-             "graceful-fs": "4.1.11",
-             "iconv-lite": "0.4.19",
-@@ -3874,11 +3874,11 @@
-           "integrity": "sha1-yY2bzvdWdBiOEQlpFRGZ45sfppM="
-         },
-         "detective": {
--          "version": "4.5.0",
--          "resolved": "https://registry.npmjs.org/detective/-/detective-4.5.0.tgz",
--          "integrity": "sha1-blqMaybmx6JUsca210kNmOyR7dE=",
-+          "version": "4.6.0",
-+          "resolved": "https://registry.npmjs.org/detective/-/detective-4.6.0.tgz",
-+          "integrity": "sha512-bvuiWqtm2RYtEnfjAuRw9XTJhUbfbOfsmtIRXQcNgMyUplxJP611EzoVxObkSvaSnfBUEjoKVzaUzdtIRMcCXg==",
-           "requires": {
--            "acorn": "4.0.13",
-+            "acorn": "5.2.1",
-             "defined": "1.0.0"
-           }
-         },
-@@ -3954,7 +3954,7 @@
-           "resolved": "https://registry.npmjs.org/jstransform/-/jstransform-11.0.3.tgz",
-           "integrity": "sha1-CaeJk+CuTU70SH9hVakfYZDLQiM=",
-           "requires": {
--            "base62": "1.2.0",
-+            "base62": "1.2.1",
-             "commoner": "0.10.8",
-             "esprima-fb": "15001.1.0-dev-harmony-fb",
-             "object-assign": "2.1.1",
-@@ -4212,7 +4212,7 @@
-       "requires": {
-         "acorn": "3.3.0",
-         "async": "1.5.2",
--        "clone": "1.0.2",
-+        "clone": "1.0.3",
-         "enhanced-resolve": "0.9.1",
-         "interpret": "0.6.6",
-         "loader-utils": "0.2.17",
-@@ -4313,9 +4313,9 @@
-           "integrity": "sha512-+hN/Zh2D08Mx65pZ/4g5bsmNiZUuChDiQfTUQ7qJr4/kuopCr88xZsAXv6mBoZEsUI4OuGHlX59qE94K2mMW8Q=="
-         },
-         "binary-extensions": {
--          "version": "1.10.0",
--          "resolved": "https://registry.npmjs.org/binary-extensions/-/binary-extensions-1.10.0.tgz",
--          "integrity": "sha1-muuabF6IY4qtFx4Wf1kAq+JINdA="
-+          "version": "1.11.0",
-+          "resolved": "https://registry.npmjs.org/binary-extensions/-/binary-extensions-1.11.0.tgz",
-+          "integrity": "sha1-RqoXUftqL5PuXmibsQh9SxTGwgU="
-         },
-         "brace-expansion": {
-           "version": "1.1.8",
-@@ -4401,9 +4401,9 @@
-           }
-         },
-         "clone": {
--          "version": "1.0.2",
--          "resolved": "https://registry.npmjs.org/clone/-/clone-1.0.2.tgz",
--          "integrity": "sha1-Jgt6meux7f4kdTgXX3gyQ8sZ0Uk="
-+          "version": "1.0.3",
-+          "resolved": "https://registry.npmjs.org/clone/-/clone-1.0.3.tgz",
-+          "integrity": "sha1-KY1+IjFmD0DAA8LtMUDezz9TCF8="
-         },
-         "concat-map": {
-           "version": "0.0.1",
-@@ -4543,9 +4543,9 @@
-           }
-         },
-         "fsevents": {
--          "version": "1.1.2",
--          "resolved": "https://registry.npmjs.org/fsevents/-/fsevents-1.1.2.tgz",
--          "integrity": "sha512-Sn44E5wQW4bTHXvQmvSHwqbuiXtduD6Rrjm2ZtUEGbyrig+nUH3t/QD4M4/ZXViY556TBpRgZkHLDx3JxPwxiw==",
-+          "version": "1.1.3",
-+          "resolved": "https://registry.npmjs.org/fsevents/-/fsevents-1.1.3.tgz",
-+          "integrity": "sha512-WIr7iDkdmdbxu/Gh6eKEZJL6KPE74/5MEsf2whTOFNxbIoIixogroLdKYqB6FDav4Wavh/lZdzzd3b2KxIXC5Q==",
-           "dependencies": {
-             "abbrev": {
-               "version": "1.1.0",
-@@ -4669,6 +4669,10 @@
-               "version": "1.0.0",
-               "bundled": true
-             },
-+            "detect-libc": {
-+              "version": "1.0.2",
-+              "bundled": true
-+            },
-             "ecc-jsbn": {
-               "version": "0.1.1",
-               "bundled": true
-@@ -4834,7 +4838,7 @@
-               "bundled": true
-             },
-             "node-pre-gyp": {
--              "version": "0.6.36",
-+              "version": "0.6.39",
-               "bundled": true
-             },
-             "nopt": {
-@@ -5077,7 +5081,7 @@
-           "resolved": "https://registry.npmjs.org/is-binary-path/-/is-binary-path-1.0.1.tgz",
-           "integrity": "sha1-dfFmQrSA8YenEcgUFh/TpKdlWJg=",
-           "requires": {
--            "binary-extensions": "1.10.0"
-+            "binary-extensions": "1.11.0"
-           }
-         },
-         "is-buffer": {
-@@ -5232,9 +5236,9 @@
-           }
-         },
-         "nan": {
--          "version": "2.7.0",
--          "resolved": "https://registry.npmjs.org/nan/-/nan-2.7.0.tgz",
--          "integrity": "sha1-2Vv3IeyHfgjbJ27T/G63j5CDrUY="
-+          "version": "2.8.0",
-+          "resolved": "https://registry.npmjs.org/nan/-/nan-2.8.0.tgz",
-+          "integrity": "sha1-7XFfP+neArV6XmJS2QqWZ14fCFo="
-         },
-         "node-libs-browser": {
-           "version": "0.6.0",
-```
----
-*File #106*
+*File #94*
 
 **kfs-web/src/main/webapp/WEB-INF/struts-config.xml**
 
@@ -19472,7 +18994,7 @@ index 30da588727..c2fc81f927 100644
                  scope="request" parameter="methodToCall" attribute="KualiForm"
 ```
 ---
-*File #107*
+*File #95*
 
 **kfs-web/src/main/webapp/WEB-INF/tags/kr/page.tag**
 
@@ -19496,7 +19018,7 @@ index 58941229d5..cdfe9eb131 100644
  		<script type="text/javascript">var jsContextPath = "${pageContext.request.contextPath}";</script>
 ```
 ---
-*File #108*
+*File #96*
 
 **kfs-web/src/main/webapp/WEB-INF/tags/kr/rowDisplay.tag**
 
@@ -19516,7 +19038,7 @@ index 81f61eaf62..39c5dde761 100644
                                             fieldName="${field.propertyName}" fieldType="${field.fieldType}"
 ```
 ---
-*File #109*
+*File #97*
 
 **kfs-web/src/test/java/org/kuali/kfs/web/filter/ResourceLoginFilterTest.java**
 
@@ -19896,10 +19418,28 @@ index 8a32220283..8cc9acd9aa 100644
  }
 ```
 ---
-*File #110*
-
-**1**
-
 ```diff
+diff --git a/pom.xml b/pom.xml
+index dc90ae5d82..451b297a12 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -37,7 +37,7 @@
+     </modules>
+     <groupId>org.kuali.kfs</groupId>
+     <artifactId>kfs</artifactId>
+-    <version>2017-11-02</version>
++    <version>2017-11-30</version>
+     <name>Kuali Financial System</name>
+     <description>a comprehensive financial management system for higher education.</description>
+     <inceptionYear>2005</inceptionYear>
+@@ -140,7 +140,7 @@
+         <hibernate.version>3.6.9.Final</hibernate.version>
+         <httpclient.version>4.5.3</httpclient.version>
+         <itext.version>1.4.8</itext.version>
+-        <jackson.version>2.9.0</jackson.version>
++        <jackson.version>2.9.2</jackson.version>
+         <jasperreports.version>2.0.4</jasperreports.version>
+         <javamelody.core.version>1.62.0</javamelody.core.version>
+         <javax.resource.connector.api.version>1.5</javax.resource.connector.api.version>
 ```
 ---
